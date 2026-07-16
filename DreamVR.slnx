@@ -1,7 +1,10 @@
 ﻿<Solution>
   <Project Path="VHierarchy.csproj" />
+  <Project Path="HighlightPlus.Runtime.csproj" />
   <Project Path="VFolders.csproj" />
   <Project Path="VInspector.csproj" />
+  <Project Path="HighlightPlus.Demo.csproj" />
+  <Project Path="HighlightPlus.Editor.csproj" />
   <Project Path="VFavorites.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
