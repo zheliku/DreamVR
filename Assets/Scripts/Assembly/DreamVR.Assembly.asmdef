@@ -1,0 +1,17 @@
+{
+    "name": "DreamVR.Assembly",
+    "rootNamespace": "DreamVR.Assembly",
+    "references": [
+        "Oculus.Interaction",
+        "HighlightPlus.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

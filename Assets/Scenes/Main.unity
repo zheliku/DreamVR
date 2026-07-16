@@ -261,6 +261,153 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 932423620}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1211974351}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423641}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423640}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423639}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423638}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423637}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423636}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423635}
+    - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423642}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098670}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098669}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098668}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098667}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098666}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098665}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098664}
+    - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860098671}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208333}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208332}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208331}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208330}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208329}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208328}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208327}
+    - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289208334}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000172}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000176}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000171}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000175}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000174}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948000173}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423634}
+    - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932423633}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188119}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188118}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188117}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188116}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188115}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188114}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188113}
+    - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046188120}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699097}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699096}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699095}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699094}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699093}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699092}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699091}
+    - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2123699098}
   m_SourcePrefab: {fileID: 100100000, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
 --- !u!1 &932423619 stripped
 GameObject:
@@ -274,7 +421,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932423619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
   m_Name: 
@@ -309,7 +456,7 @@ MonoBehaviour:
   customPassName: 
   normalsOption: 0
   ignore: 0
-  _highlighted: 1
+  _highlighted: 0
   fadeInDuration: 0
   fadeOutDuration: 0
   flipY: 0
@@ -535,6 +682,982 @@ MonoBehaviour:
   hitFxFadeOutDuration: 0.25
   hitFxColor: {r: 1, g: 1, b: 1, a: 1}
   hitFxRadius: 0.5
+--- !u!4 &932423621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8785531802063193353, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932423622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 829815956761030706, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932423624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8377762778440625201, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932423626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5758945546265690309, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932423628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4068890051471152516, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932423630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 939364856128569422, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &932423632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &932423633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 4
+  _round: 3
+  _localDirection: {x: 0, y: 0, z: 1}
+  _maxDistance: 0.40442047
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 948000176}
+  _grabbable: {fileID: 948000175}
+  _controllerGrab: {fileID: 948000174}
+  _handGrab: {fileID: 948000173}
+  _highlightEffect: {fileID: 932423634}
+--- !u!114 &932423634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423621}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &932423635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423630}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &932423636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 932423638}
+  _rigidbody: {fileID: 932423640}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &932423637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 932423638}
+  _rigidbody: {fileID: 932423640}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &932423638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 932423639}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423630}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 932423640}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &932423639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: -0.72483945
+    MaxZ:
+      Constrain: 1
+      Value: 0
+--- !u!54 &932423640
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &932423641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.86051756, y: 0.818401, z: 0.30099994}
+  m_Center: {x: 0, y: -0.043200552, z: 0.15049993}
+--- !u!114 &932423642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 1
+  _round: 1
+  _localDirection: {x: -0, y: -0, z: -1}
+  _maxDistance: 0.72483945
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 932423640}
+  _grabbable: {fileID: 932423638}
+  _controllerGrab: {fileID: 932423637}
+  _handGrab: {fileID: 932423636}
+  _highlightEffect: {fileID: 932423635}
+--- !u!114 &948000171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: 0
+    MaxZ:
+      Constrain: 1
+      Value: 0.40442047
+--- !u!65 &948000172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 1.3314788, z: 0.030000329}
+  m_Center: {x: 0, y: 0.07028395, z: 0.31599993}
+--- !u!114 &948000173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 948000175}
+  _rigidbody: {fileID: 948000176}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &948000174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 948000175}
+  _rigidbody: {fileID: 948000176}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &948000175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 948000171}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423621}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 948000176}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!54 &948000176
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423632}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &995191357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1361,6 +2484,485 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1709884503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1211974351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a441eac9d2085d49ba032f8a148a8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyController
+  _condition: 0
+  _parts:
+  - {fileID: 932423642}
+  - {fileID: 2123699098}
+  - {fileID: 1860098671}
+  - {fileID: 2046188120}
+  - {fileID: 1289208334}
+  - {fileID: 932423633}
+  _currentRound: 1
+--- !u!114 &1289208327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423626}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &1289208328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1289208330}
+  _rigidbody: {fileID: 1289208332}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &1289208329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1289208330}
+  _rigidbody: {fileID: 1289208332}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &1289208330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1289208331}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423626}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 1289208332}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &1289208331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: -0.72483945
+    MaxZ:
+      Constrain: 1
+      Value: 0
+--- !u!54 &1289208332
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &1289208333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35500002, y: 0.3549999, z: 0.33076286}
+  m_Center: {x: 0, y: -0.000000074505806, z: 0.49638146}
+--- !u!114 &1289208334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 3
+  _round: 3
+  _localDirection: {x: -0, y: -0, z: -1}
+  _maxDistance: 0.72483945
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 1289208332}
+  _grabbable: {fileID: 1289208330}
+  _controllerGrab: {fileID: 1289208329}
+  _handGrab: {fileID: 1289208328}
+  _highlightEffect: {fileID: 1289208327}
 --- !u!1001 &1395062624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1594,6 +3196,26 @@ PrefabInstance:
     - target: {fileID: 7516989853945399145, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1211974351}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ResetAll
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DreamVR.Assembly.AssemblyController, DreamVR.Assembly
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812296, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
@@ -2123,6 +3745,464 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1753983033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1860098664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423628}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &1860098665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1860098667}
+  _rigidbody: {fileID: 1860098669}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &1860098666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1860098667}
+  _rigidbody: {fileID: 1860098669}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &1860098667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1860098668}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423628}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 1860098669}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &1860098668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: -0.72483945
+    MaxZ:
+      Constrain: 1
+      Value: 0
+--- !u!54 &1860098669
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &1860098670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.66741735, y: 0.6697047, z: 0.49200064}
+  m_Center: {x: -0.002291292, y: 0, z: 0.24599968}
+--- !u!114 &1860098671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 2
+  _round: 2
+  _localDirection: {x: -0, y: -0, z: -1}
+  _maxDistance: 0.72483945
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 1860098669}
+  _grabbable: {fileID: 1860098667}
+  _controllerGrab: {fileID: 1860098666}
+  _handGrab: {fileID: 1860098665}
+  _highlightEffect: {fileID: 1860098664}
 --- !u!1001 &1947831846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2205,6 +4285,922 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574527821592105548, guid: af3467ecf1a7ab8428e0ef8e746be06a, type: 3}
   m_PrefabInstance: {fileID: 1947831846}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2046188113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423624}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &2046188114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 2046188116}
+  _rigidbody: {fileID: 2046188118}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &2046188115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 2046188116}
+  _rigidbody: {fileID: 2046188118}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &2046188116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 2046188117}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423624}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 2046188118}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &2046188117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: 0
+    MaxZ:
+      Constrain: 1
+      Value: 0.40442047
+--- !u!54 &2046188118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &2046188119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.35500002, y: 0.3549999, z: 0.32999992}
+  m_Center: {x: 0, y: -0.000000074505806, z: 0.496}
+--- !u!114 &2046188120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 6
+  _round: 2
+  _localDirection: {x: 0, y: 0, z: 1}
+  _maxDistance: 0.40442047
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 2046188118}
+  _grabbable: {fileID: 2046188116}
+  _controllerGrab: {fileID: 2046188115}
+  _handGrab: {fileID: 2046188114}
+  _highlightEffect: {fileID: 2046188113}
+--- !u!114 &2123699091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 932423622}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &2123699092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 2123699094}
+  _rigidbody: {fileID: 2123699096}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &2123699093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 2123699094}
+  _rigidbody: {fileID: 2123699096}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &2123699094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 2123699095}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 932423622}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 2123699096}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &2123699095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: 0
+    MaxZ:
+      Constrain: 1
+      Value: 0.40442047
+--- !u!54 &2123699096
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &2123699097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.945, y: 0.8987479, z: 0.030000329}
+  m_Center: {x: 0, y: 0.04744166, z: 0.67600006}
+--- !u!114 &2123699098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932423623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 7
+  _round: 1
+  _localDirection: {x: 0, y: 0, z: 1}
+  _maxDistance: 0.40442047
+  _completionThreshold: 0.98
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 2123699096}
+  _grabbable: {fileID: 2123699094}
+  _controllerGrab: {fileID: 2123699093}
+  _handGrab: {fileID: 2123699092}
+  _highlightEffect: {fileID: 2123699091}
 --- !u!1 &250979948671612115
 GameObject:
   m_ObjectHideFlags: 0
