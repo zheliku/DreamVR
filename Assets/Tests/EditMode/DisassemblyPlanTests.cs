@@ -71,6 +71,42 @@ namespace DreamVR.Assembly.Tests
         }
 
         [Test]
+        public void CollisionPolicy_IgnoresOnlyCollidersInsideTheAssemblyRoot()
+        {
+            var root = new GameObject("Assembly");
+            var firstObject = new GameObject("First");
+            var secondObject = new GameObject("Second");
+            firstObject.transform.SetParent(root.transform, worldPositionStays: false);
+            secondObject.transform.SetParent(root.transform, worldPositionStays: false);
+            BoxCollider firstCollider = firstObject.AddComponent<BoxCollider>();
+            BoxCollider secondCollider = secondObject.AddComponent<BoxCollider>();
+
+            try
+            {
+                AssemblyPart first = firstObject.AddComponent<AssemblyPart>();
+                first.Configure(
+                    1,
+                    1,
+                    Vector3.forward,
+                    1f,
+                    0.92f,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    root.transform,
+                    ignoreInternalAssemblyCollisions: true);
+
+                Assert.That(Physics.GetIgnoreCollision(firstCollider, secondCollider), Is.True);
+            }
+            finally
+            {
+                Object.DestroyImmediate(root);
+            }
+        }
+
+        [Test]
         public void Controller_AdvancesRoundsAndResetRestoresInitialState()
         {
             var root = new GameObject("Assembly");

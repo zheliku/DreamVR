@@ -119,74 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &240455254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 240455255}
-  m_Layer: 0
-  m_Name: LeftHandAnchorDetached
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &240455255
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240455254}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1395062626}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &492262402 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
-  m_PrefabInstance: {fileID: 1395062624}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &575742801
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575742802}
-  m_Layer: 0
-  m_Name: RightHandAnchorDetached
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &575742802
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575742801}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1395062626}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &932423618
+--- !u!1001 &153489156
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -196,15 +129,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -212,11 +145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.775
+      value: 0.7709
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.405
+      value: 0.438
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -260,520 +193,280 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423620}
+      addedObject: {fileID: 550613929}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1211974351}
+      addedObject: {fileID: 153489171}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423641}
+      addedObject: {fileID: 359807860}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423640}
+      addedObject: {fileID: 359807859}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423639}
+      addedObject: {fileID: 359807858}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423638}
+      addedObject: {fileID: 359807857}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423637}
+      addedObject: {fileID: 359807856}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423636}
+      addedObject: {fileID: 359807855}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423635}
+      addedObject: {fileID: 359807854}
     - targetCorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423642}
+      addedObject: {fileID: 359807853}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098670}
+      addedObject: {fileID: 1925836199}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098669}
+      addedObject: {fileID: 1925836198}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098668}
+      addedObject: {fileID: 1925836197}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098667}
+      addedObject: {fileID: 1925836196}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098666}
+      addedObject: {fileID: 1925836195}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098665}
+      addedObject: {fileID: 1925836194}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098664}
+      addedObject: {fileID: 1925836193}
     - targetCorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1860098671}
+      addedObject: {fileID: 1925836192}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208333}
+      addedObject: {fileID: 477445229}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208332}
+      addedObject: {fileID: 477445228}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208331}
+      addedObject: {fileID: 477445227}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208330}
+      addedObject: {fileID: 477445226}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208329}
+      addedObject: {fileID: 477445225}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208328}
+      addedObject: {fileID: 477445224}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208327}
+      addedObject: {fileID: 477445223}
     - targetCorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289208334}
+      addedObject: {fileID: 477445222}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000172}
+      addedObject: {fileID: 662180999}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000176}
+      addedObject: {fileID: 662180998}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000171}
+      addedObject: {fileID: 662180997}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000175}
+      addedObject: {fileID: 662180996}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000174}
+      addedObject: {fileID: 662180995}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 948000173}
+      addedObject: {fileID: 662180994}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423634}
+      addedObject: {fileID: 662180993}
     - targetCorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 932423633}
+      addedObject: {fileID: 662180992}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188119}
+      addedObject: {fileID: 1261344245}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188118}
+      addedObject: {fileID: 1261344244}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188117}
+      addedObject: {fileID: 1261344243}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188116}
+      addedObject: {fileID: 1261344242}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188115}
+      addedObject: {fileID: 1261344241}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188114}
+      addedObject: {fileID: 1261344240}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188113}
+      addedObject: {fileID: 1261344239}
     - targetCorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2046188120}
+      addedObject: {fileID: 1261344238}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699097}
+      addedObject: {fileID: 153489179}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699096}
+      addedObject: {fileID: 153489178}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699095}
+      addedObject: {fileID: 153489177}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699094}
+      addedObject: {fileID: 153489176}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699093}
+      addedObject: {fileID: 153489175}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699092}
+      addedObject: {fileID: 153489174}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699091}
+      addedObject: {fileID: 153489173}
     - targetCorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123699098}
+      addedObject: {fileID: 153489172}
   m_SourcePrefab: {fileID: 100100000, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
---- !u!1 &932423619 stripped
+--- !u!1 &153489157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabInstance: {fileID: 153489156}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &932423620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423619}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
-  profile: {fileID: 0}
-  profileSync: 0
-  camerasLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectGroup: 0
-  effectTarget: {fileID: 0}
-  effectGroupLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectNameFilter: 
-  effectNameUseRegEx: 0
-  excludeObjectsWithHighlightEffect: 0
-  combineMeshes: 0
-  alphaCutOff: 0
-  alphaCutOffTextureName: 
-  cullBackFaces: 1
-  ignoreObjectVisibility: 0
-  reflectionProbes: 0
-  GPUInstancing: 1
-  sortingPriority: 0
-  optimizeSkinnedMesh: 1
-  depthClip: 0
-  cameraDistanceFade: 0
-  cameraDistanceFadeNear: 0
-  cameraDistanceFadeFar: 1000
-  useOriginalShader: 0
-  customPassName: 
-  normalsOption: 0
-  ignore: 0
-  _highlighted: 0
-  fadeInDuration: 0
-  fadeOutDuration: 0
-  flipY: 0
-  constantWidth: 1
-  extraCoveragePixels: 0
-  minimumWidth: 0
-  subMeshMask: -1
-  vertexTransformMode: 0
-  overlay: 0
-  overlayMode: 0
-  overlayPattern: 0
-  overlayPatternScrolling: {x: 0, y: 0}
-  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overlayAnimationSpeed: 1
-  overlayMinIntensity: 0.5
-  overlayBlending: 1
-  overlayTexture: {fileID: 0}
-  overlayTextureUVSpace: 1
-  overlayTextureScale: 1
-  overlayTextureScrolling: {x: 0, y: 0}
-  overlayVisibility: 0
-  overlayPatternScale: 10
-  overlayPatternSize: 0.15
-  overlayPatternSoftness: 0.02
-  overlayPatternRotation: 0
-  outline: 1
-  outlineColor: {r: 1, g: 0, b: 0, a: 1}
-  outlineColorStyle: 0
-  outlineGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  outlineGradientInLocalSpace: 0
-  outlineWidth: 0.45
-  outlineBlurPasses: 2
-  outlineQuality: 3
-  outlineEdgeMode: 0
-  outlineEdgeThreshold: 0.995
-  outlineDistanceScaleBias: 25
-  outlineSharpness: 1
-  outlineDownsampling: 1
-  outlineVisibility: 0
-  glowBlendMode: 0
-  outlineBlitDebug: 0
-  outlineIndependent: 0
-  outlineContourStyle: 0
-  outlineMaskMode: 0
-  outlineGradientKnee: 0.4
-  outlineGradientPower: 8
-  padding: 0
-  outlinePixelation: 0
-  outlineStylized: 0
-  outlinePattern: {fileID: 0}
-  outlinePatternScale: 0.3
-  outlinePatternThreshold: 0.3
-  outlinePatternDistortionAmount: 0.5
-  outlinePatternDistortionTexture: {fileID: 0}
-  outlinePatternStopMotionScale: 5
-  outlineDashed: 0
-  outlineDashWidth: 0.5
-  outlineDashGap: 0.3
-  outlineDashSpeed: 2
-  glow: 0
-  glowWidth: 0.4
-  glowQuality: 3
-  glowBlurMethod: 0
-  glowHighPrecision: 1
-  glowDistanceScaleBias: 25
-  glowDownsampling: 2
-  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
-  glowDithering: 1
-  glowDitheringStyle: 0
-  glowMagicNumber1: 0.75
-  glowMagicNumber2: 0.5
-  glowAnimationSpeed: 1
-  glowVisibility: 0
-  glowBlitDebug: 0
-  glowBlendPasses: 1
-  glowPasses:
-  - offset: 4
-    alpha: 0.1
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 3
-    alpha: 0.2
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 2
-    alpha: 0.3
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 1
-    alpha: 0.4
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  glowMaskMode: 0
-  glowPixelation: 0
-  innerGlow: 0
-  innerGlowWidth: 1
-  innerGlowPower: 1
-  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
-  innerGlowBlendMode: 0
-  innerGlowVisibility: 0
-  focus: 0
-  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
-  focusBlur: 0
-  focusBlurDownsampling: 2
-  focusDesaturation: 0
-  targetFX: 0
-  targetFXStyle: 0
-  targetFXFrameWidth: 0.1
-  targetFXCornerLength: 0.25
-  targetFXFrameMinOpacity: 0
-  targetFXGroundMinAltitude: -1000
-  targetFXTexture: {fileID: 0}
-  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
-  targetFXCenter: {fileID: 0}
-  targetFXRotationSpeed: 50
-  targetFXRotationAngle: 0
-  targetFXInitialScale: 4
-  targetFXEndScale: 1.5
-  targetFXScaleToRenderBounds: 1
-  targetFXUseEnclosingBounds: 0
-  targetFXSquare: 1
-  targetFXAlignToGround: 0
-  targetFXOffset: {x: 0, y: 0, z: 0}
-  targetFxCenterOnHitPosition: 0
-  targetFxAlignToNormal: 0
-  targetFXFadePower: 32
-  targetFXGroundMaxDistance: 10
-  targetFXGroundLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  targetFXTransitionDuration: 0.5
-  targetFXStayDuration: 1.5
-  targetFXVisibility: 1
-  iconFX: 0
-  iconFXAssetType: 0
-  iconFXPrefab: {fileID: 0}
-  iconFXMesh: {fileID: 0}
-  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
-  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  iconFXCenter: {fileID: 0}
-  iconFXRotationSpeed: 50
-  iconFXAnimationOption: 0
-  iconFXAnimationAmount: 0.1
-  iconFXAnimationSpeed: 3
-  iconFXScale: 1
-  iconFXScaleToRenderBounds: 0
-  iconFXOffset: {x: 0, y: 1, z: 0}
-  iconFXTransitionDuration: 0.5
-  iconFXStayDuration: 1.5
-  labelEnabled: 0
-  labelText: Label
-  labelTextSize: 14
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
-  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
-  labelViewportOffset: {x: 0, y: 0}
-  labelVerticalOffset: 0
-  labelLineLength: 200
-  labelTarget: {fileID: 0}
-  labelFollowCursor: 1
-  labelMode: 0
-  labelShowInEditorMode: 1
-  labelAlignment: 0
-  labelRelativeAlignment: 0
-  labelAlignmentTransform: {fileID: 0}
-  labelMaxDistance: 250
-  labelFadeStartDistance: 200
-  labelScaleByDistance: 0
-  labelScaleMin: 1
-  labelScaleMax: 1
-  seeThrough: 2
-  seeThroughOccluderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  seeThroughOccluderThreshold: 0.3
-  seeThroughOccluderMaskAccurate: 0
-  seeThroughOccluderCheckInterval: 1
-  seeThroughOccluderCheckIndividualObjects: 0
-  seeThroughDepthOffset: 0
-  seeThroughMaxDepth: 0
-  seeThroughFadeRange: 0
-  seeThroughIntensity: 0.8
-  seeThroughTintAlpha: 0.5
-  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
-  seeThroughNoise: 1
-  seeThroughBorder: 0
-  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
-  seeThroughBorderOnly: 0
-  seeThroughBorderWidth: 0.45
-  seeThroughOrdered: 0
-  seeThroughTexture: {fileID: 0}
-  seeThroughTextureUVSpace: 0
-  seeThroughTextureScale: 1
-  seeThroughChildrenSortingMode: 0
-  rmsCount: 8
-  hitFxInitialIntensity: 0
-  hitFxMode: 0
-  hitFXTriggerMode: 0
-  hitFxFadeOutDuration: 0.25
-  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
-  hitFxRadius: 0.5
---- !u!4 &932423621 stripped
+--- !u!4 &153489158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8785531802063193353, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabInstance: {fileID: 153489156}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &932423622 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 829815956761030706, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &932423624 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8377762778440625201, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &932423626 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -5758945546265690309, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &932423628 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4068890051471152516, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &932423630 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 939364856128569422, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423631 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &932423632 stripped
+--- !u!1 &153489159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6119074459522590508, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
-  m_PrefabInstance: {fileID: 932423618}
+  m_PrefabInstance: {fileID: 153489156}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &932423633
+--- !u!4 &153489160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5758945546265690309, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153489161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4446740428231810337, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153489162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8377762778440625201, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153489163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3590864072415234283, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153489164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4068890051471152516, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153489165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7460911097118563979, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153489166 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 829815956761030706, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153489167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7173846040455002926, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153489168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 939364856128569422, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153489169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6533624816551863289, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153489170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 93dd518070e2f2c429ac950c8ffea32e, type: 3}
+  m_PrefabInstance: {fileID: 153489156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &153489171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
+  m_GameObject: {fileID: 153489157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a441eac9d2085d49ba032f8a148a8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyController
+  _condition: 0
+  _parts:
+  - {fileID: 359807853}
+  - {fileID: 153489172}
+  - {fileID: 1925836192}
+  - {fileID: 1261344238}
+  - {fileID: 477445222}
+  - {fileID: 662180992}
+  _currentRound: 1
+--- !u!114 &153489172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
-  _childIndex: 4
-  _round: 3
+  _childIndex: 7
+  _round: 1
   _localDirection: {x: 0, y: 0, z: 1}
-  _maxDistance: 0.40442047
-  _completionThreshold: 0.98
+  _maxDistance: 0.6388253
+  _completionThreshold: 0.92
   _hasInitialPose: 1
   _initialLocalPosition: {x: -0, y: 0, z: 0}
   _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 948000176}
-  _grabbable: {fileID: 948000175}
-  _controllerGrab: {fileID: 948000174}
-  _handGrab: {fileID: 948000173}
-  _highlightEffect: {fileID: 932423634}
---- !u!114 &932423634
+  _rigidbody: {fileID: 153489178}
+  _grabbable: {fileID: 153489176}
+  _controllerGrab: {fileID: 153489175}
+  _handGrab: {fileID: 153489174}
+  _highlightEffect: {fileID: 153489173}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &153489173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
@@ -785,7 +478,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   effectGroup: 0
-  effectTarget: {fileID: 932423621}
+  effectTarget: {fileID: 153489166}
   effectGroupLayer:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1035,281 +728,13 @@ MonoBehaviour:
   hitFxFadeOutDuration: 0.25
   hitFxColor: {r: 1, g: 1, b: 1, a: 1}
   hitFxRadius: 0.5
---- !u!114 &932423635
+--- !u!114 &153489174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
-  profile: {fileID: 0}
-  profileSync: 0
-  camerasLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectGroup: 0
-  effectTarget: {fileID: 932423630}
-  effectGroupLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectNameFilter: 
-  effectNameUseRegEx: 0
-  excludeObjectsWithHighlightEffect: 0
-  combineMeshes: 0
-  alphaCutOff: 0
-  alphaCutOffTextureName: 
-  cullBackFaces: 1
-  ignoreObjectVisibility: 0
-  reflectionProbes: 0
-  GPUInstancing: 1
-  sortingPriority: 0
-  optimizeSkinnedMesh: 1
-  depthClip: 0
-  cameraDistanceFade: 0
-  cameraDistanceFadeNear: 0
-  cameraDistanceFadeFar: 1000
-  useOriginalShader: 0
-  customPassName: 
-  normalsOption: 0
-  ignore: 0
-  _highlighted: 0
-  fadeInDuration: 0
-  fadeOutDuration: 0
-  flipY: 0
-  constantWidth: 1
-  extraCoveragePixels: 0
-  minimumWidth: 0
-  subMeshMask: -1
-  vertexTransformMode: 0
-  overlay: 0
-  overlayMode: 0
-  overlayPattern: 0
-  overlayPatternScrolling: {x: 0, y: 0}
-  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overlayAnimationSpeed: 1
-  overlayMinIntensity: 0.5
-  overlayBlending: 1
-  overlayTexture: {fileID: 0}
-  overlayTextureUVSpace: 1
-  overlayTextureScale: 1
-  overlayTextureScrolling: {x: 0, y: 0}
-  overlayVisibility: 0
-  overlayPatternScale: 10
-  overlayPatternSize: 0.15
-  overlayPatternSoftness: 0.02
-  overlayPatternRotation: 0
-  outline: 1
-  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
-  outlineColorStyle: 0
-  outlineGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  outlineGradientInLocalSpace: 0
-  outlineWidth: 0.35
-  outlineBlurPasses: 2
-  outlineQuality: 3
-  outlineEdgeMode: 0
-  outlineEdgeThreshold: 0.995
-  outlineDistanceScaleBias: 25
-  outlineSharpness: 1
-  outlineDownsampling: 1
-  outlineVisibility: 0
-  glowBlendMode: 0
-  outlineBlitDebug: 0
-  outlineIndependent: 0
-  outlineContourStyle: 0
-  outlineMaskMode: 0
-  outlineGradientKnee: 0.4
-  outlineGradientPower: 8
-  padding: 0
-  outlinePixelation: 0
-  outlineStylized: 0
-  outlinePattern: {fileID: 0}
-  outlinePatternScale: 0.3
-  outlinePatternThreshold: 0.3
-  outlinePatternDistortionAmount: 0.5
-  outlinePatternDistortionTexture: {fileID: 0}
-  outlinePatternStopMotionScale: 5
-  outlineDashed: 0
-  outlineDashWidth: 0.5
-  outlineDashGap: 0.3
-  outlineDashSpeed: 2
-  glow: 0
-  glowWidth: 0.4
-  glowQuality: 3
-  glowBlurMethod: 0
-  glowHighPrecision: 1
-  glowDistanceScaleBias: 25
-  glowDownsampling: 2
-  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
-  glowDithering: 1
-  glowDitheringStyle: 0
-  glowMagicNumber1: 0.75
-  glowMagicNumber2: 0.5
-  glowAnimationSpeed: 1
-  glowVisibility: 0
-  glowBlitDebug: 0
-  glowBlendPasses: 1
-  glowPasses:
-  - offset: 4
-    alpha: 0.1
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 3
-    alpha: 0.2
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 2
-    alpha: 0.3
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 1
-    alpha: 0.4
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  glowMaskMode: 0
-  glowPixelation: 0
-  innerGlow: 0
-  innerGlowWidth: 1
-  innerGlowPower: 1
-  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
-  innerGlowBlendMode: 0
-  innerGlowVisibility: 0
-  focus: 0
-  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
-  focusBlur: 0
-  focusBlurDownsampling: 2
-  focusDesaturation: 0
-  targetFX: 0
-  targetFXStyle: 0
-  targetFXFrameWidth: 0.1
-  targetFXCornerLength: 0.25
-  targetFXFrameMinOpacity: 0
-  targetFXGroundMinAltitude: -1000
-  targetFXTexture: {fileID: 0}
-  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
-  targetFXCenter: {fileID: 0}
-  targetFXRotationSpeed: 50
-  targetFXRotationAngle: 0
-  targetFXInitialScale: 4
-  targetFXEndScale: 1.5
-  targetFXScaleToRenderBounds: 1
-  targetFXUseEnclosingBounds: 0
-  targetFXSquare: 1
-  targetFXAlignToGround: 0
-  targetFXOffset: {x: 0, y: 0, z: 0}
-  targetFxCenterOnHitPosition: 0
-  targetFxAlignToNormal: 0
-  targetFXFadePower: 32
-  targetFXGroundMaxDistance: 10
-  targetFXGroundLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  targetFXTransitionDuration: 0.5
-  targetFXStayDuration: 1.5
-  targetFXVisibility: 1
-  iconFX: 0
-  iconFXAssetType: 0
-  iconFXPrefab: {fileID: 0}
-  iconFXMesh: {fileID: 0}
-  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
-  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  iconFXCenter: {fileID: 0}
-  iconFXRotationSpeed: 50
-  iconFXAnimationOption: 0
-  iconFXAnimationAmount: 0.1
-  iconFXAnimationSpeed: 3
-  iconFXScale: 1
-  iconFXScaleToRenderBounds: 0
-  iconFXOffset: {x: 0, y: 1, z: 0}
-  iconFXTransitionDuration: 0.5
-  iconFXStayDuration: 1.5
-  labelEnabled: 0
-  labelText: Label
-  labelTextSize: 14
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
-  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
-  labelViewportOffset: {x: 0, y: 0}
-  labelVerticalOffset: 0
-  labelLineLength: 200
-  labelTarget: {fileID: 0}
-  labelFollowCursor: 1
-  labelMode: 0
-  labelShowInEditorMode: 1
-  labelAlignment: 0
-  labelRelativeAlignment: 0
-  labelAlignmentTransform: {fileID: 0}
-  labelMaxDistance: 250
-  labelFadeStartDistance: 200
-  labelScaleByDistance: 0
-  labelScaleMin: 1
-  labelScaleMax: 1
-  seeThrough: 2
-  seeThroughOccluderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  seeThroughOccluderThreshold: 0.3
-  seeThroughOccluderMaskAccurate: 0
-  seeThroughOccluderCheckInterval: 1
-  seeThroughOccluderCheckIndividualObjects: 0
-  seeThroughDepthOffset: 0
-  seeThroughMaxDepth: 0
-  seeThroughFadeRange: 0
-  seeThroughIntensity: 0.8
-  seeThroughTintAlpha: 0.5
-  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
-  seeThroughNoise: 1
-  seeThroughBorder: 0
-  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
-  seeThroughBorderOnly: 0
-  seeThroughBorderWidth: 0.45
-  seeThroughOrdered: 0
-  seeThroughTexture: {fileID: 0}
-  seeThroughTextureUVSpace: 0
-  seeThroughTextureScale: 1
-  seeThroughChildrenSortingMode: 0
-  rmsCount: 1
-  hitFxInitialIntensity: 0
-  hitFxMode: 0
-  hitFXTriggerMode: 0
-  hitFxFadeOutDuration: 0.25
-  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
-  hitFxRadius: 0.5
---- !u!114 &932423636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -1319,8 +744,8 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 932423638}
-  _rigidbody: {fileID: 932423640}
+  _pointableElement: {fileID: 153489176}
+  _rigidbody: {fileID: 153489178}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -1343,13 +768,13 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!114 &932423637
+--- !u!114 &153489175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
@@ -1359,19 +784,19 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 932423638}
-  _rigidbody: {fileID: 932423640}
+  _pointableElement: {fileID: 153489176}
+  _rigidbody: {fileID: 153489178}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 1
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
---- !u!114 &932423638
+--- !u!114 &153489176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -1380,21 +805,21 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 932423639}
+  _oneGrabTransformer: {fileID: 153489177}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423630}
+  _targetTransform: {fileID: 153489166}
   _maxGrabPoints: 1
-  _rigidbody: {fileID: 932423640}
+  _rigidbody: {fileID: 153489178}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
---- !u!114 &932423639
+--- !u!114 &153489177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
@@ -1416,17 +841,17 @@ MonoBehaviour:
       Value: 0
     MinZ:
       Constrain: 1
-      Value: -0.72483945
+      Value: 0
     MaxZ:
       Constrain: 1
-      Value: 0
---- !u!54 &932423640
+      Value: 0.6388253
+--- !u!54 &153489178
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -1447,13 +872,13 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!65 &932423641
+--- !u!65 &153489179
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489167}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1466,15 +891,46 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.86051756, y: 0.818401, z: 0.30099994}
-  m_Center: {x: 0, y: -0.043200552, z: 0.15049993}
---- !u!114 &932423642
+  m_Size: {x: 0.945, y: 0.8987482, z: 0.030000448}
+  m_Center: {x: 0, y: 0.04744166, z: 0.6759999}
+--- !u!1 &240455254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240455255}
+  m_Layer: 0
+  m_Name: LeftHandAnchorDetached
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &240455255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240455254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1395062626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &359807853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423631}
+  m_GameObject: {fileID: 153489169}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
@@ -1483,23 +939,1360 @@ MonoBehaviour:
   _childIndex: 1
   _round: 1
   _localDirection: {x: -0, y: -0, z: -1}
-  _maxDistance: 0.72483945
-  _completionThreshold: 0.98
+  _maxDistance: 1.0206599
+  _completionThreshold: 0.92
   _hasInitialPose: 1
   _initialLocalPosition: {x: -0, y: 0, z: 0}
   _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 932423640}
-  _grabbable: {fileID: 932423638}
-  _controllerGrab: {fileID: 932423637}
-  _handGrab: {fileID: 932423636}
-  _highlightEffect: {fileID: 932423635}
---- !u!114 &948000171
+  _rigidbody: {fileID: 359807859}
+  _grabbable: {fileID: 359807857}
+  _controllerGrab: {fileID: 359807856}
+  _handGrab: {fileID: 359807855}
+  _highlightEffect: {fileID: 359807854}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &359807854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
+  m_GameObject: {fileID: 153489169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 153489168}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &359807855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 359807857}
+  _rigidbody: {fileID: 359807859}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &359807856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 359807857}
+  _rigidbody: {fileID: 359807859}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &359807857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 359807858}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 153489168}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 359807859}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &359807858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: -1.0206599
+    MaxZ:
+      Constrain: 1
+      Value: 0
+--- !u!54 &359807859
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &359807860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489169}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.86051756, y: 0.81840074, z: 0.30100012}
+  m_Center: {x: 0, y: -0.043200433, z: 0.15049998}
+--- !u!114 &477445222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 3
+  _round: 3
+  _localDirection: {x: -0, y: -0, z: -1}
+  _maxDistance: 1.0206599
+  _completionThreshold: 0.92
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 477445228}
+  _grabbable: {fileID: 477445226}
+  _controllerGrab: {fileID: 477445225}
+  _handGrab: {fileID: 477445224}
+  _highlightEffect: {fileID: 477445223}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &477445223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 153489160}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &477445224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 477445226}
+  _rigidbody: {fileID: 477445228}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &477445225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 477445226}
+  _rigidbody: {fileID: 477445228}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &477445226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 477445227}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 153489160}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 477445228}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &477445227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
+  _constraints:
+    ConstraintsAreRelative: 1
+    MinX:
+      Constrain: 1
+      Value: 0
+    MaxX:
+      Constrain: 1
+      Value: 0
+    MinY:
+      Constrain: 1
+      Value: 0
+    MaxY:
+      Constrain: 1
+      Value: 0
+    MinZ:
+      Constrain: 1
+      Value: -1.0206599
+    MaxZ:
+      Constrain: 1
+      Value: 0
+--- !u!54 &477445228
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!65 &477445229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489161}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.355, y: 0.355, z: 0.33076316}
+  m_Center: {x: 0, y: 0, z: 0.4963815}
+--- !u!1 &492262402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1395062624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &550613929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40029f1d842720f4e9f17fe3b2ed8e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyConfigurator
+  _planAsset: {fileID: 0}
+  _findPlanNextToModel: 1
+  _saveSceneAfterConfigure: 1
+  _condition: 0
+  _partSizeClearanceMultiplier: 0.35
+  _assemblySizeClearanceMultiplier: 0.08
+  _additionalClearance: 0.08
+  _minimumTravelDistance: 0.25
+  _travelDistanceMultiplier: 1.15
+  _ignoreInternalAssemblyCollisions: 1
+  _createBoxColliderWhenMissing: 1
+  _completionThreshold: 0.92
+  _contactOutlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  _outlineWidth: 0.35
+--- !u!1 &575742801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575742802}
+  m_Layer: 0
+  m_Name: RightHandAnchorDetached
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575742802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575742801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1395062626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &662180992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 4
+  _round: 3
+  _localDirection: {x: 0, y: 0, z: 1}
+  _maxDistance: 0.6068323
+  _completionThreshold: 0.92
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 662180998}
+  _grabbable: {fileID: 662180996}
+  _controllerGrab: {fileID: 662180995}
+  _handGrab: {fileID: 662180994}
+  _highlightEffect: {fileID: 662180993}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &662180993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
+  profile: {fileID: 0}
+  profileSync: 0
+  camerasLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectGroup: 0
+  effectTarget: {fileID: 153489158}
+  effectGroupLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  effectNameFilter: 
+  effectNameUseRegEx: 0
+  excludeObjectsWithHighlightEffect: 0
+  combineMeshes: 0
+  alphaCutOff: 0
+  alphaCutOffTextureName: 
+  cullBackFaces: 1
+  ignoreObjectVisibility: 0
+  reflectionProbes: 0
+  GPUInstancing: 1
+  sortingPriority: 0
+  optimizeSkinnedMesh: 1
+  depthClip: 0
+  cameraDistanceFade: 0
+  cameraDistanceFadeNear: 0
+  cameraDistanceFadeFar: 1000
+  useOriginalShader: 0
+  customPassName: 
+  normalsOption: 0
+  ignore: 0
+  _highlighted: 0
+  fadeInDuration: 0
+  fadeOutDuration: 0
+  flipY: 0
+  constantWidth: 1
+  extraCoveragePixels: 0
+  minimumWidth: 0
+  subMeshMask: -1
+  vertexTransformMode: 0
+  overlay: 0
+  overlayMode: 0
+  overlayPattern: 0
+  overlayPatternScrolling: {x: 0, y: 0}
+  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  overlayAnimationSpeed: 1
+  overlayMinIntensity: 0.5
+  overlayBlending: 1
+  overlayTexture: {fileID: 0}
+  overlayTextureUVSpace: 1
+  overlayTextureScale: 1
+  overlayTextureScrolling: {x: 0, y: 0}
+  overlayVisibility: 0
+  overlayPatternScale: 10
+  overlayPatternSize: 0.15
+  overlayPatternSoftness: 0.02
+  overlayPatternRotation: 0
+  outline: 1
+  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
+  outlineColorStyle: 0
+  outlineGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  outlineGradientInLocalSpace: 0
+  outlineWidth: 0.35
+  outlineBlurPasses: 2
+  outlineQuality: 3
+  outlineEdgeMode: 0
+  outlineEdgeThreshold: 0.995
+  outlineDistanceScaleBias: 25
+  outlineSharpness: 1
+  outlineDownsampling: 1
+  outlineVisibility: 0
+  glowBlendMode: 0
+  outlineBlitDebug: 0
+  outlineIndependent: 0
+  outlineContourStyle: 0
+  outlineMaskMode: 0
+  outlineGradientKnee: 0.4
+  outlineGradientPower: 8
+  padding: 0
+  outlinePixelation: 0
+  outlineStylized: 0
+  outlinePattern: {fileID: 0}
+  outlinePatternScale: 0.3
+  outlinePatternThreshold: 0.3
+  outlinePatternDistortionAmount: 0.5
+  outlinePatternDistortionTexture: {fileID: 0}
+  outlinePatternStopMotionScale: 5
+  outlineDashed: 0
+  outlineDashWidth: 0.5
+  outlineDashGap: 0.3
+  outlineDashSpeed: 2
+  glow: 0
+  glowWidth: 0.4
+  glowQuality: 3
+  glowBlurMethod: 0
+  glowHighPrecision: 1
+  glowDistanceScaleBias: 25
+  glowDownsampling: 2
+  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
+  glowDithering: 1
+  glowDitheringStyle: 0
+  glowMagicNumber1: 0.75
+  glowMagicNumber2: 0.5
+  glowAnimationSpeed: 1
+  glowVisibility: 0
+  glowBlitDebug: 0
+  glowBlendPasses: 1
+  glowPasses:
+  - offset: 4
+    alpha: 0.1
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 3
+    alpha: 0.2
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 2
+    alpha: 0.3
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  - offset: 1
+    alpha: 0.4
+    color: {r: 0.64, g: 1, b: 0, a: 1}
+  glowMaskMode: 0
+  glowPixelation: 0
+  innerGlow: 0
+  innerGlowWidth: 1
+  innerGlowPower: 1
+  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
+  innerGlowBlendMode: 0
+  innerGlowVisibility: 0
+  focus: 0
+  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
+  focusBlur: 0
+  focusBlurDownsampling: 2
+  focusDesaturation: 0
+  targetFX: 0
+  targetFXStyle: 0
+  targetFXFrameWidth: 0.1
+  targetFXCornerLength: 0.25
+  targetFXFrameMinOpacity: 0
+  targetFXGroundMinAltitude: -1000
+  targetFXTexture: {fileID: 0}
+  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
+  targetFXCenter: {fileID: 0}
+  targetFXRotationSpeed: 50
+  targetFXRotationAngle: 0
+  targetFXInitialScale: 4
+  targetFXEndScale: 1.5
+  targetFXScaleToRenderBounds: 1
+  targetFXUseEnclosingBounds: 0
+  targetFXSquare: 1
+  targetFXAlignToGround: 0
+  targetFXOffset: {x: 0, y: 0, z: 0}
+  targetFxCenterOnHitPosition: 0
+  targetFxAlignToNormal: 0
+  targetFXFadePower: 32
+  targetFXGroundMaxDistance: 10
+  targetFXGroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetFXTransitionDuration: 0.5
+  targetFXStayDuration: 1.5
+  targetFXVisibility: 1
+  iconFX: 0
+  iconFXAssetType: 0
+  iconFXPrefab: {fileID: 0}
+  iconFXMesh: {fileID: 0}
+  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
+  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  iconFXCenter: {fileID: 0}
+  iconFXRotationSpeed: 50
+  iconFXAnimationOption: 0
+  iconFXAnimationAmount: 0.1
+  iconFXAnimationSpeed: 3
+  iconFXScale: 1
+  iconFXScaleToRenderBounds: 0
+  iconFXOffset: {x: 0, y: 1, z: 0}
+  iconFXTransitionDuration: 0.5
+  iconFXStayDuration: 1.5
+  labelEnabled: 0
+  labelText: Label
+  labelTextSize: 14
+  labelColor: {r: 1, g: 1, b: 1, a: 1}
+  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
+  labelViewportOffset: {x: 0, y: 0}
+  labelVerticalOffset: 0
+  labelLineLength: 200
+  labelTarget: {fileID: 0}
+  labelFollowCursor: 1
+  labelMode: 0
+  labelShowInEditorMode: 1
+  labelAlignment: 0
+  labelRelativeAlignment: 0
+  labelAlignmentTransform: {fileID: 0}
+  labelMaxDistance: 250
+  labelFadeStartDistance: 200
+  labelScaleByDistance: 0
+  labelScaleMin: 1
+  labelScaleMax: 1
+  seeThrough: 2
+  seeThroughOccluderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seeThroughOccluderThreshold: 0.3
+  seeThroughOccluderMaskAccurate: 0
+  seeThroughOccluderCheckInterval: 1
+  seeThroughOccluderCheckIndividualObjects: 0
+  seeThroughDepthOffset: 0
+  seeThroughMaxDepth: 0
+  seeThroughFadeRange: 0
+  seeThroughIntensity: 0.8
+  seeThroughTintAlpha: 0.5
+  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
+  seeThroughNoise: 1
+  seeThroughBorder: 0
+  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  seeThroughBorderOnly: 0
+  seeThroughBorderWidth: 0.45
+  seeThroughOrdered: 0
+  seeThroughTexture: {fileID: 0}
+  seeThroughTextureUVSpace: 0
+  seeThroughTextureScale: 1
+  seeThroughChildrenSortingMode: 0
+  rmsCount: 1
+  hitFxInitialIntensity: 0
+  hitFxMode: 0
+  hitFXTriggerMode: 0
+  hitFxFadeOutDuration: 0.25
+  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
+  hitFxRadius: 0.5
+--- !u!114 &662180994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 662180996}
+  _rigidbody: {fileID: 662180998}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &662180995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: 1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 662180996}
+  _rigidbody: {fileID: 662180998}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 1
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+--- !u!114 &662180996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 662180997}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 153489158}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 662180998}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 0
+  _forceKinematicDisabled: 0
+--- !u!114 &662180997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
@@ -1524,120 +2317,14 @@ MonoBehaviour:
       Value: 0
     MaxZ:
       Constrain: 1
-      Value: 0.40442047
---- !u!65 &948000172
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4, y: 1.3314788, z: 0.030000329}
-  m_Center: {x: 0, y: 0.07028395, z: 0.31599993}
---- !u!114 &948000173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 948000175}
-  _rigidbody: {fileID: 948000176}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.8
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &948000174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 948000175}
-  _rigidbody: {fileID: 948000176}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 1
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
---- !u!114 &948000175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 948000171}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423621}
-  _maxGrabPoints: 1
-  _rigidbody: {fileID: 948000176}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 0
-  _forceKinematicDisabled: 0
---- !u!54 &948000176
+      Value: 0.6068323
+--- !u!54 &662180998
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423632}
+  m_GameObject: {fileID: 153489159}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -1658,6 +2345,27 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!65 &662180999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489159}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 1.3314788, z: 0.03000021}
+  m_Center: {x: 0, y: 0.07028389, z: 0.31599993}
 --- !u!1001 &995191357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2484,34 +3192,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1709884503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1211974351
+--- !u!114 &1261344238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423619}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a441eac9d2085d49ba032f8a148a8bc, type: 3}
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyController
-  _condition: 0
-  _parts:
-  - {fileID: 932423642}
-  - {fileID: 2123699098}
-  - {fileID: 1860098671}
-  - {fileID: 2046188120}
-  - {fileID: 1289208334}
-  - {fileID: 932423633}
-  _currentRound: 1
---- !u!114 &1289208327
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 6
+  _round: 2
+  _localDirection: {x: 0, y: 0, z: 1}
+  _maxDistance: 0.6388253
+  _completionThreshold: 0.92
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 1261344244}
+  _grabbable: {fileID: 1261344242}
+  _controllerGrab: {fileID: 1261344241}
+  _handGrab: {fileID: 1261344240}
+  _highlightEffect: {fileID: 1261344239}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &1261344239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
@@ -2523,7 +3237,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   effectGroup: 0
-  effectTarget: {fileID: 932423626}
+  effectTarget: {fileID: 153489162}
   effectGroupLayer:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2773,13 +3487,13 @@ MonoBehaviour:
   hitFxFadeOutDuration: 0.25
   hitFxColor: {r: 1, g: 1, b: 1, a: 1}
   hitFxRadius: 0.5
---- !u!114 &1289208328
+--- !u!114 &1261344240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -2789,8 +3503,8 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 1289208330}
-  _rigidbody: {fileID: 1289208332}
+  _pointableElement: {fileID: 1261344242}
+  _rigidbody: {fileID: 1261344244}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -2813,13 +3527,13 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!114 &1289208329
+--- !u!114 &1261344241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
@@ -2829,19 +3543,19 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 1289208330}
-  _rigidbody: {fileID: 1289208332}
+  _pointableElement: {fileID: 1261344242}
+  _rigidbody: {fileID: 1261344244}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 1
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
---- !u!114 &1289208330
+--- !u!114 &1261344242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -2850,21 +3564,21 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 1289208331}
+  _oneGrabTransformer: {fileID: 1261344243}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423626}
+  _targetTransform: {fileID: 153489162}
   _maxGrabPoints: 1
-  _rigidbody: {fileID: 1289208332}
+  _rigidbody: {fileID: 1261344244}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
---- !u!114 &1289208331
+--- !u!114 &1261344243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
@@ -2886,17 +3600,17 @@ MonoBehaviour:
       Value: 0
     MinZ:
       Constrain: 1
-      Value: -0.72483945
+      Value: 0
     MaxZ:
       Constrain: 1
-      Value: 0
---- !u!54 &1289208332
+      Value: 0.6388253
+--- !u!54 &1261344244
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -2917,13 +3631,13 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!65 &1289208333
+--- !u!65 &1261344245
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
+  m_GameObject: {fileID: 153489163}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2936,33 +3650,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.35500002, y: 0.3549999, z: 0.33076286}
-  m_Center: {x: 0, y: -0.000000074505806, z: 0.49638146}
---- !u!114 &1289208334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
-  _childIndex: 3
-  _round: 3
-  _localDirection: {x: -0, y: -0, z: -1}
-  _maxDistance: 0.72483945
-  _completionThreshold: 0.98
-  _hasInitialPose: 1
-  _initialLocalPosition: {x: -0, y: 0, z: 0}
-  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 1289208332}
-  _grabbable: {fileID: 1289208330}
-  _controllerGrab: {fileID: 1289208329}
-  _handGrab: {fileID: 1289208328}
-  _highlightEffect: {fileID: 1289208327}
+  m_Size: {x: 0.355, y: 0.355, z: 0.33000004}
+  m_Center: {x: 0, y: 0, z: 0.4959998}
 --- !u!1001 &1395062624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3199,14 +3888,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1211974351}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 153489171}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
@@ -3214,7 +3911,15 @@ PrefabInstance:
       value: ResetAll
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: ResetAll
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DreamVR.Assembly.AssemblyController, DreamVR.Assembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: DreamVR.Assembly.AssemblyController, DreamVR.Assembly
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812296, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
@@ -3243,7 +3948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854395125638, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15
+      value: 0.1736
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854395125638, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3745,13 +4450,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1753983033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1860098664
+--- !u!114 &1925836192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
+  _childIndex: 2
+  _round: 2
+  _localDirection: {x: -0, y: -0, z: -1}
+  _maxDistance: 1.0206599
+  _completionThreshold: 0.92
+  _hasInitialPose: 1
+  _initialLocalPosition: {x: -0, y: 0, z: 0}
+  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  _rigidbody: {fileID: 1925836198}
+  _grabbable: {fileID: 1925836196}
+  _controllerGrab: {fileID: 1925836195}
+  _handGrab: {fileID: 1925836194}
+  _highlightEffect: {fileID: 1925836193}
+  _collisionRoot: {fileID: 153489170}
+  _ignoreInternalAssemblyCollisions: 1
+--- !u!114 &1925836193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153489165}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
@@ -3763,7 +4495,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   effectGroup: 0
-  effectTarget: {fileID: 932423628}
+  effectTarget: {fileID: 153489164}
   effectGroupLayer:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4013,13 +4745,13 @@ MonoBehaviour:
   hitFxFadeOutDuration: 0.25
   hitFxColor: {r: 1, g: 1, b: 1, a: 1}
   hitFxRadius: 0.5
---- !u!114 &1860098665
+--- !u!114 &1925836194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -4029,8 +4761,8 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 1860098667}
-  _rigidbody: {fileID: 1860098669}
+  _pointableElement: {fileID: 1925836196}
+  _rigidbody: {fileID: 1925836198}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -4053,13 +4785,13 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!114 &1860098666
+--- !u!114 &1925836195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
@@ -4069,19 +4801,19 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 1860098667}
-  _rigidbody: {fileID: 1860098669}
+  _pointableElement: {fileID: 1925836196}
+  _rigidbody: {fileID: 1925836198}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 1
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
---- !u!114 &1860098667
+--- !u!114 &1925836196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -4090,21 +4822,21 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 1860098668}
+  _oneGrabTransformer: {fileID: 1925836197}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423628}
+  _targetTransform: {fileID: 153489164}
   _maxGrabPoints: 1
-  _rigidbody: {fileID: 1860098669}
+  _rigidbody: {fileID: 1925836198}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 0
   _forceKinematicDisabled: 0
---- !u!114 &1860098668
+--- !u!114 &1925836197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
@@ -4126,17 +4858,17 @@ MonoBehaviour:
       Value: 0
     MinZ:
       Constrain: 1
-      Value: -0.72483945
+      Value: -1.0206599
     MaxZ:
       Constrain: 1
       Value: 0
---- !u!54 &1860098669
+--- !u!54 &1925836198
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -4157,13 +4889,13 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!65 &1860098670
+--- !u!65 &1925836199
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
+  m_GameObject: {fileID: 153489165}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4176,33 +4908,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.66741735, y: 0.6697047, z: 0.49200064}
-  m_Center: {x: -0.002291292, y: 0, z: 0.24599968}
---- !u!114 &1860098671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
-  _childIndex: 2
-  _round: 2
-  _localDirection: {x: -0, y: -0, z: -1}
-  _maxDistance: 0.72483945
-  _completionThreshold: 0.98
-  _hasInitialPose: 1
-  _initialLocalPosition: {x: -0, y: 0, z: 0}
-  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 1860098669}
-  _grabbable: {fileID: 1860098667}
-  _controllerGrab: {fileID: 1860098666}
-  _handGrab: {fileID: 1860098665}
-  _highlightEffect: {fileID: 1860098664}
+  m_Size: {x: 0.66741735, y: 0.6697048, z: 0.49200004}
+  m_Center: {x: -0.002291292, y: 0.000000029802322, z: 0.24599995}
 --- !u!1001 &1947831846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4285,922 +4992,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574527821592105548, guid: af3467ecf1a7ab8428e0ef8e746be06a, type: 3}
   m_PrefabInstance: {fileID: 1947831846}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2046188113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
-  profile: {fileID: 0}
-  profileSync: 0
-  camerasLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectGroup: 0
-  effectTarget: {fileID: 932423624}
-  effectGroupLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectNameFilter: 
-  effectNameUseRegEx: 0
-  excludeObjectsWithHighlightEffect: 0
-  combineMeshes: 0
-  alphaCutOff: 0
-  alphaCutOffTextureName: 
-  cullBackFaces: 1
-  ignoreObjectVisibility: 0
-  reflectionProbes: 0
-  GPUInstancing: 1
-  sortingPriority: 0
-  optimizeSkinnedMesh: 1
-  depthClip: 0
-  cameraDistanceFade: 0
-  cameraDistanceFadeNear: 0
-  cameraDistanceFadeFar: 1000
-  useOriginalShader: 0
-  customPassName: 
-  normalsOption: 0
-  ignore: 0
-  _highlighted: 0
-  fadeInDuration: 0
-  fadeOutDuration: 0
-  flipY: 0
-  constantWidth: 1
-  extraCoveragePixels: 0
-  minimumWidth: 0
-  subMeshMask: -1
-  vertexTransformMode: 0
-  overlay: 0
-  overlayMode: 0
-  overlayPattern: 0
-  overlayPatternScrolling: {x: 0, y: 0}
-  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overlayAnimationSpeed: 1
-  overlayMinIntensity: 0.5
-  overlayBlending: 1
-  overlayTexture: {fileID: 0}
-  overlayTextureUVSpace: 1
-  overlayTextureScale: 1
-  overlayTextureScrolling: {x: 0, y: 0}
-  overlayVisibility: 0
-  overlayPatternScale: 10
-  overlayPatternSize: 0.15
-  overlayPatternSoftness: 0.02
-  overlayPatternRotation: 0
-  outline: 1
-  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
-  outlineColorStyle: 0
-  outlineGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  outlineGradientInLocalSpace: 0
-  outlineWidth: 0.35
-  outlineBlurPasses: 2
-  outlineQuality: 3
-  outlineEdgeMode: 0
-  outlineEdgeThreshold: 0.995
-  outlineDistanceScaleBias: 25
-  outlineSharpness: 1
-  outlineDownsampling: 1
-  outlineVisibility: 0
-  glowBlendMode: 0
-  outlineBlitDebug: 0
-  outlineIndependent: 0
-  outlineContourStyle: 0
-  outlineMaskMode: 0
-  outlineGradientKnee: 0.4
-  outlineGradientPower: 8
-  padding: 0
-  outlinePixelation: 0
-  outlineStylized: 0
-  outlinePattern: {fileID: 0}
-  outlinePatternScale: 0.3
-  outlinePatternThreshold: 0.3
-  outlinePatternDistortionAmount: 0.5
-  outlinePatternDistortionTexture: {fileID: 0}
-  outlinePatternStopMotionScale: 5
-  outlineDashed: 0
-  outlineDashWidth: 0.5
-  outlineDashGap: 0.3
-  outlineDashSpeed: 2
-  glow: 0
-  glowWidth: 0.4
-  glowQuality: 3
-  glowBlurMethod: 0
-  glowHighPrecision: 1
-  glowDistanceScaleBias: 25
-  glowDownsampling: 2
-  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
-  glowDithering: 1
-  glowDitheringStyle: 0
-  glowMagicNumber1: 0.75
-  glowMagicNumber2: 0.5
-  glowAnimationSpeed: 1
-  glowVisibility: 0
-  glowBlitDebug: 0
-  glowBlendPasses: 1
-  glowPasses:
-  - offset: 4
-    alpha: 0.1
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 3
-    alpha: 0.2
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 2
-    alpha: 0.3
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 1
-    alpha: 0.4
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  glowMaskMode: 0
-  glowPixelation: 0
-  innerGlow: 0
-  innerGlowWidth: 1
-  innerGlowPower: 1
-  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
-  innerGlowBlendMode: 0
-  innerGlowVisibility: 0
-  focus: 0
-  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
-  focusBlur: 0
-  focusBlurDownsampling: 2
-  focusDesaturation: 0
-  targetFX: 0
-  targetFXStyle: 0
-  targetFXFrameWidth: 0.1
-  targetFXCornerLength: 0.25
-  targetFXFrameMinOpacity: 0
-  targetFXGroundMinAltitude: -1000
-  targetFXTexture: {fileID: 0}
-  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
-  targetFXCenter: {fileID: 0}
-  targetFXRotationSpeed: 50
-  targetFXRotationAngle: 0
-  targetFXInitialScale: 4
-  targetFXEndScale: 1.5
-  targetFXScaleToRenderBounds: 1
-  targetFXUseEnclosingBounds: 0
-  targetFXSquare: 1
-  targetFXAlignToGround: 0
-  targetFXOffset: {x: 0, y: 0, z: 0}
-  targetFxCenterOnHitPosition: 0
-  targetFxAlignToNormal: 0
-  targetFXFadePower: 32
-  targetFXGroundMaxDistance: 10
-  targetFXGroundLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  targetFXTransitionDuration: 0.5
-  targetFXStayDuration: 1.5
-  targetFXVisibility: 1
-  iconFX: 0
-  iconFXAssetType: 0
-  iconFXPrefab: {fileID: 0}
-  iconFXMesh: {fileID: 0}
-  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
-  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  iconFXCenter: {fileID: 0}
-  iconFXRotationSpeed: 50
-  iconFXAnimationOption: 0
-  iconFXAnimationAmount: 0.1
-  iconFXAnimationSpeed: 3
-  iconFXScale: 1
-  iconFXScaleToRenderBounds: 0
-  iconFXOffset: {x: 0, y: 1, z: 0}
-  iconFXTransitionDuration: 0.5
-  iconFXStayDuration: 1.5
-  labelEnabled: 0
-  labelText: Label
-  labelTextSize: 14
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
-  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
-  labelViewportOffset: {x: 0, y: 0}
-  labelVerticalOffset: 0
-  labelLineLength: 200
-  labelTarget: {fileID: 0}
-  labelFollowCursor: 1
-  labelMode: 0
-  labelShowInEditorMode: 1
-  labelAlignment: 0
-  labelRelativeAlignment: 0
-  labelAlignmentTransform: {fileID: 0}
-  labelMaxDistance: 250
-  labelFadeStartDistance: 200
-  labelScaleByDistance: 0
-  labelScaleMin: 1
-  labelScaleMax: 1
-  seeThrough: 2
-  seeThroughOccluderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  seeThroughOccluderThreshold: 0.3
-  seeThroughOccluderMaskAccurate: 0
-  seeThroughOccluderCheckInterval: 1
-  seeThroughOccluderCheckIndividualObjects: 0
-  seeThroughDepthOffset: 0
-  seeThroughMaxDepth: 0
-  seeThroughFadeRange: 0
-  seeThroughIntensity: 0.8
-  seeThroughTintAlpha: 0.5
-  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
-  seeThroughNoise: 1
-  seeThroughBorder: 0
-  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
-  seeThroughBorderOnly: 0
-  seeThroughBorderWidth: 0.45
-  seeThroughOrdered: 0
-  seeThroughTexture: {fileID: 0}
-  seeThroughTextureUVSpace: 0
-  seeThroughTextureScale: 1
-  seeThroughChildrenSortingMode: 0
-  rmsCount: 1
-  hitFxInitialIntensity: 0
-  hitFxMode: 0
-  hitFXTriggerMode: 0
-  hitFxFadeOutDuration: 0.25
-  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
-  hitFxRadius: 0.5
---- !u!114 &2046188114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 2046188116}
-  _rigidbody: {fileID: 2046188118}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.8
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &2046188115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 2046188116}
-  _rigidbody: {fileID: 2046188118}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 1
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
---- !u!114 &2046188116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 2046188117}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423624}
-  _maxGrabPoints: 1
-  _rigidbody: {fileID: 2046188118}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 0
-  _forceKinematicDisabled: 0
---- !u!114 &2046188117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
-  _constraints:
-    ConstraintsAreRelative: 1
-    MinX:
-      Constrain: 1
-      Value: 0
-    MaxX:
-      Constrain: 1
-      Value: 0
-    MinY:
-      Constrain: 1
-      Value: 0
-    MaxY:
-      Constrain: 1
-      Value: 0
-    MinZ:
-      Constrain: 1
-      Value: 0
-    MaxZ:
-      Constrain: 1
-      Value: 0.40442047
---- !u!54 &2046188118
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 3
---- !u!65 &2046188119
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.35500002, y: 0.3549999, z: 0.32999992}
-  m_Center: {x: 0, y: -0.000000074505806, z: 0.496}
---- !u!114 &2046188120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
-  _childIndex: 6
-  _round: 2
-  _localDirection: {x: 0, y: 0, z: 1}
-  _maxDistance: 0.40442047
-  _completionThreshold: 0.98
-  _hasInitialPose: 1
-  _initialLocalPosition: {x: -0, y: 0, z: 0}
-  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 2046188118}
-  _grabbable: {fileID: 2046188116}
-  _controllerGrab: {fileID: 2046188115}
-  _handGrab: {fileID: 2046188114}
-  _highlightEffect: {fileID: 2046188113}
---- !u!114 &2123699091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: HighlightPlus.Runtime::HighlightPlus.HighlightEffect
-  profile: {fileID: 0}
-  profileSync: 0
-  camerasLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectGroup: 0
-  effectTarget: {fileID: 932423622}
-  effectGroupLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  effectNameFilter: 
-  effectNameUseRegEx: 0
-  excludeObjectsWithHighlightEffect: 0
-  combineMeshes: 0
-  alphaCutOff: 0
-  alphaCutOffTextureName: 
-  cullBackFaces: 1
-  ignoreObjectVisibility: 0
-  reflectionProbes: 0
-  GPUInstancing: 1
-  sortingPriority: 0
-  optimizeSkinnedMesh: 1
-  depthClip: 0
-  cameraDistanceFade: 0
-  cameraDistanceFadeNear: 0
-  cameraDistanceFadeFar: 1000
-  useOriginalShader: 0
-  customPassName: 
-  normalsOption: 0
-  ignore: 0
-  _highlighted: 0
-  fadeInDuration: 0
-  fadeOutDuration: 0
-  flipY: 0
-  constantWidth: 1
-  extraCoveragePixels: 0
-  minimumWidth: 0
-  subMeshMask: -1
-  vertexTransformMode: 0
-  overlay: 0
-  overlayMode: 0
-  overlayPattern: 0
-  overlayPatternScrolling: {x: 0, y: 0}
-  overlayColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  overlayAnimationSpeed: 1
-  overlayMinIntensity: 0.5
-  overlayBlending: 1
-  overlayTexture: {fileID: 0}
-  overlayTextureUVSpace: 1
-  overlayTextureScale: 1
-  overlayTextureScrolling: {x: 0, y: 0}
-  overlayVisibility: 0
-  overlayPatternScale: 10
-  overlayPatternSize: 0.15
-  overlayPatternSoftness: 0.02
-  overlayPatternRotation: 0
-  outline: 1
-  outlineColor: {r: 0.15, g: 0.85, b: 1, a: 1}
-  outlineColorStyle: 0
-  outlineGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  outlineGradientInLocalSpace: 0
-  outlineWidth: 0.35
-  outlineBlurPasses: 2
-  outlineQuality: 3
-  outlineEdgeMode: 0
-  outlineEdgeThreshold: 0.995
-  outlineDistanceScaleBias: 25
-  outlineSharpness: 1
-  outlineDownsampling: 1
-  outlineVisibility: 0
-  glowBlendMode: 0
-  outlineBlitDebug: 0
-  outlineIndependent: 0
-  outlineContourStyle: 0
-  outlineMaskMode: 0
-  outlineGradientKnee: 0.4
-  outlineGradientPower: 8
-  padding: 0
-  outlinePixelation: 0
-  outlineStylized: 0
-  outlinePattern: {fileID: 0}
-  outlinePatternScale: 0.3
-  outlinePatternThreshold: 0.3
-  outlinePatternDistortionAmount: 0.5
-  outlinePatternDistortionTexture: {fileID: 0}
-  outlinePatternStopMotionScale: 5
-  outlineDashed: 0
-  outlineDashWidth: 0.5
-  outlineDashGap: 0.3
-  outlineDashSpeed: 2
-  glow: 0
-  glowWidth: 0.4
-  glowQuality: 3
-  glowBlurMethod: 0
-  glowHighPrecision: 1
-  glowDistanceScaleBias: 25
-  glowDownsampling: 2
-  glowHQColor: {r: 0.64, g: 1, b: 0, a: 1}
-  glowDithering: 1
-  glowDitheringStyle: 0
-  glowMagicNumber1: 0.75
-  glowMagicNumber2: 0.5
-  glowAnimationSpeed: 1
-  glowVisibility: 0
-  glowBlitDebug: 0
-  glowBlendPasses: 1
-  glowPasses:
-  - offset: 4
-    alpha: 0.1
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 3
-    alpha: 0.2
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 2
-    alpha: 0.3
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  - offset: 1
-    alpha: 0.4
-    color: {r: 0.64, g: 1, b: 0, a: 1}
-  glowMaskMode: 0
-  glowPixelation: 0
-  innerGlow: 0
-  innerGlowWidth: 1
-  innerGlowPower: 1
-  innerGlowColor: {r: 1, g: 1, b: 1, a: 1}
-  innerGlowBlendMode: 0
-  innerGlowVisibility: 0
-  focus: 0
-  focusColor: {r: 0, g: 0, b: 0, a: 0.9412}
-  focusBlur: 0
-  focusBlurDownsampling: 2
-  focusDesaturation: 0
-  targetFX: 0
-  targetFXStyle: 0
-  targetFXFrameWidth: 0.1
-  targetFXCornerLength: 0.25
-  targetFXFrameMinOpacity: 0
-  targetFXGroundMinAltitude: -1000
-  targetFXTexture: {fileID: 0}
-  targetFXColor: {r: 1, g: 1, b: 1, a: 1}
-  targetFXCenter: {fileID: 0}
-  targetFXRotationSpeed: 50
-  targetFXRotationAngle: 0
-  targetFXInitialScale: 4
-  targetFXEndScale: 1.5
-  targetFXScaleToRenderBounds: 1
-  targetFXUseEnclosingBounds: 0
-  targetFXSquare: 1
-  targetFXAlignToGround: 0
-  targetFXOffset: {x: 0, y: 0, z: 0}
-  targetFxCenterOnHitPosition: 0
-  targetFxAlignToNormal: 0
-  targetFXFadePower: 32
-  targetFXGroundMaxDistance: 10
-  targetFXGroundLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  targetFXTransitionDuration: 0.5
-  targetFXStayDuration: 1.5
-  targetFXVisibility: 1
-  iconFX: 0
-  iconFXAssetType: 0
-  iconFXPrefab: {fileID: 0}
-  iconFXMesh: {fileID: 0}
-  iconFXLightColor: {r: 1, g: 1, b: 1, a: 1}
-  iconFXDarkColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  iconFXCenter: {fileID: 0}
-  iconFXRotationSpeed: 50
-  iconFXAnimationOption: 0
-  iconFXAnimationAmount: 0.1
-  iconFXAnimationSpeed: 3
-  iconFXScale: 1
-  iconFXScaleToRenderBounds: 0
-  iconFXOffset: {x: 0, y: 1, z: 0}
-  iconFXTransitionDuration: 0.5
-  iconFXStayDuration: 1.5
-  labelEnabled: 0
-  labelText: Label
-  labelTextSize: 14
-  labelColor: {r: 1, g: 1, b: 1, a: 1}
-  labelPrefab: {fileID: 7963606135631250497, guid: 933a5612c43104c29af0a700ea5fa149, type: 3}
-  labelViewportOffset: {x: 0, y: 0}
-  labelVerticalOffset: 0
-  labelLineLength: 200
-  labelTarget: {fileID: 0}
-  labelFollowCursor: 1
-  labelMode: 0
-  labelShowInEditorMode: 1
-  labelAlignment: 0
-  labelRelativeAlignment: 0
-  labelAlignmentTransform: {fileID: 0}
-  labelMaxDistance: 250
-  labelFadeStartDistance: 200
-  labelScaleByDistance: 0
-  labelScaleMin: 1
-  labelScaleMax: 1
-  seeThrough: 2
-  seeThroughOccluderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  seeThroughOccluderThreshold: 0.3
-  seeThroughOccluderMaskAccurate: 0
-  seeThroughOccluderCheckInterval: 1
-  seeThroughOccluderCheckIndividualObjects: 0
-  seeThroughDepthOffset: 0
-  seeThroughMaxDepth: 0
-  seeThroughFadeRange: 0
-  seeThroughIntensity: 0.8
-  seeThroughTintAlpha: 0.5
-  seeThroughTintColor: {r: 1, g: 0, b: 0, a: 1}
-  seeThroughNoise: 1
-  seeThroughBorder: 0
-  seeThroughBorderColor: {r: 0, g: 0, b: 0, a: 1}
-  seeThroughBorderOnly: 0
-  seeThroughBorderWidth: 0.45
-  seeThroughOrdered: 0
-  seeThroughTexture: {fileID: 0}
-  seeThroughTextureUVSpace: 0
-  seeThroughTextureScale: 1
-  seeThroughChildrenSortingMode: 0
-  rmsCount: 1
-  hitFxInitialIntensity: 0
-  hitFxMode: 0
-  hitFXTriggerMode: 0
-  hitFxFadeOutDuration: 0.25
-  hitFxColor: {r: 1, g: 1, b: 1, a: 1}
-  hitFxRadius: 0.5
---- !u!114 &2123699092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.HandGrab.HandGrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 2123699094}
-  _rigidbody: {fileID: 2123699096}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.8
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &2123699093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.GrabInteractable
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: 1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 2123699094}
-  _rigidbody: {fileID: 2123699096}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 1
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
---- !u!114 &2123699094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grabbable
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 2123699095}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 932423622}
-  _maxGrabPoints: 1
-  _rigidbody: {fileID: 2123699096}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 0
-  _forceKinematicDisabled: 0
---- !u!114 &2123699095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9597e632dfbca247bcf65e49c67078e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.OneGrabTranslateTransformer
-  _constraints:
-    ConstraintsAreRelative: 1
-    MinX:
-      Constrain: 1
-      Value: 0
-    MaxX:
-      Constrain: 1
-      Value: 0
-    MinY:
-      Constrain: 1
-      Value: 0
-    MaxY:
-      Constrain: 1
-      Value: 0
-    MinZ:
-      Constrain: 1
-      Value: 0
-    MaxZ:
-      Constrain: 1
-      Value: 0.40442047
---- !u!54 &2123699096
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 3
---- !u!65 &2123699097
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.945, y: 0.8987479, z: 0.030000329}
-  m_Center: {x: 0, y: 0.04744166, z: 0.67600006}
---- !u!114 &2123699098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932423623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cfa037285108a4098fb046d6b27555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: DreamVR.Assembly::DreamVR.Assembly.AssemblyPart
-  _childIndex: 7
-  _round: 1
-  _localDirection: {x: 0, y: 0, z: 1}
-  _maxDistance: 0.40442047
-  _completionThreshold: 0.98
-  _hasInitialPose: 1
-  _initialLocalPosition: {x: -0, y: 0, z: 0}
-  _initialLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  _rigidbody: {fileID: 2123699096}
-  _grabbable: {fileID: 2123699094}
-  _controllerGrab: {fileID: 2123699093}
-  _handGrab: {fileID: 2123699092}
-  _highlightEffect: {fileID: 2123699091}
 --- !u!1 &250979948671612115
 GameObject:
   m_ObjectHideFlags: 0
@@ -7342,5 +7133,5 @@ SceneRoots:
   - {fileID: 1395062624}
   - {fileID: 1108419882731237328}
   - {fileID: 995191357}
-  - {fileID: 932423618}
   - {fileID: 1430711232}
+  - {fileID: 153489156}

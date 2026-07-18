@@ -59,9 +59,11 @@ round3: (3, -Z), (4, +Z)
 
 在装配体根物体或独立场景物体上挂载一个 `AssemblyController`。它保存已经解析的 `AssemblyPart` 列表、实验条件和当前轮次，并公开 `ResetAll()` 方法。第一阶段实验条件固定为 `NoGuidance`。把现有 `BigRedButton` 子物体上的 `InteractableUnityEventWrapper.WhenSelect` 绑定到该方法，同时保留按钮已有的动画和音效监听器。
 
-### Editor 配置工具
+### AssemblyConfigurator 一键配置
 
-提供一个仅在 Editor 中运行的配置命令，以便可重复地配置场景。该工具应解析并验证 E1 方向数据，一次性解析每个零件，添加和配置所需组件，建立序列化引用，并报告缺失、重复或越界的下标。运行时代码不得反复解析 `E1.txt`，也不得通过子物体下标搜索零件。
+将 `AssemblyConfigurator` 挂在完整装配模型的根物体上（E1 示例为 `71`），通过 VInspector 的“**一键配置拆卸零件**”按钮配置。组件支持显式指定 txt 或自动从 FBX 目录查找唯一 txt，并集中保存实验条件、行程余量、最小行程、碰撞策略、完成阈值和高亮样式。不要再使用 `Tools` 菜单配置装配体。
+
+配置后端只服务于该组件的 VInspector 按钮，不提供独立菜单工作流。它应解析并验证 E1 方向数据，一次性解析每个零件，添加和配置所需组件，建立序列化引用，并报告缺失、重复或越界的下标。运行时代码不得反复解析 `E1.txt`，也不得通过子物体下标搜索零件。
 
 ## Meta Grab 配置
 
@@ -81,16 +83,18 @@ round3: (3, -Z), (4, +Z)
 - 负方向移动时，目标轴限制在 `-maxDistance` 到 `0`。
 - 保持初始旋转，不允许缩放或双手变换。
 
+可动零件在严格遵守上述位置约束的同时，默认忽略与同一装配体内部 Collider 的碰撞对。这样拆卸零件不会被固定件或其他待拆件物理顶住；手、手柄及装配体外部 Collider 不受影响。行程由包围盒脱离距离、相对余量、固定余量、最小行程和整体倍率共同决定，默认值必须使零件在到达端点前完全越过装配体边界。
+
 当前 E1 数据经 Unity Renderer 包围盒计算后的实际配置如下，距离单位为索引父物体 `71` 的局部单位：
 
 | 轮次 | 零件下标 | 零件名称 | 父物体局部坐标行程 | 最大距离 |
 | ---- | -------: | -------- | ------------------ | -------: |
-| 1 | 1 | Bottom Spacer | Z 轴从 `0` 到 `-maxDistance` | 0.72484 |
-| 1 | 7 | Top Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.40442 |
-| 2 | 2 | Bulb holder | Z 轴从 `0` 到 `-maxDistance` | 0.72484 |
-| 2 | 6 | Surface 1.005 | Z 轴从 `0` 到 `+maxDistance` | 0.40442 |
-| 3 | 3 | Flange | Z 轴从 `0` 到 `-maxDistance` | 0.72484 |
-| 3 | 4 | Middle Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.40442 |
+| 1 | 1 | Bottom Spacer | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
+| 1 | 7 | Top Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.63880 |
+| 2 | 2 | Bulb holder | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
+| 2 | 6 | Surface 1.005 | Z 轴从 `0` 到 `+maxDistance` | 0.63880 |
+| 3 | 3 | Flange | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
+| 3 | 4 | Middle Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.60680 |
 
 ## 高亮配置
 
@@ -125,9 +129,9 @@ round3: (3, -Z), (4, +Z)
 - 正在抓取时执行重置也能正常工作，且不会残留高亮。
 - 先在 Editor Play Mode 中验证，再在目标 Meta 头显上验证。
 
-为方向数据解析、约束配置和重置姿态恢复添加集中的 EditMode 测试。PlayMode 测试必须跨帧检查父空间单轴约束、旋转锁定、同轮次完成门槛和重置协程。由于手部追踪和实际触达范围无法完全通过自动化测试验证，必须保留头显真机测试。
+为方向数据解析、约束配置、内部碰撞策略和重置姿态恢复添加集中的 EditMode 测试。PlayMode 测试必须跨帧检查父空间单轴约束、旋转锁定、同轮次完成门槛和重置协程。由于手部追踪和实际触达范围无法完全通过自动化测试验证，必须保留头显真机测试。
 
-当前自动验证基线：Unity EditMode 测试 `5/5`、PlayMode 测试 `3/3` 通过。PlayMode 测试会实际加载 `Main.unity`，使用真实 Meta `GrabInteractor` 对第一轮零件执行 Hover、Select、Unselect 和 Unhover，并验证 Highlight Plus 随状态开启和关闭；同时验证 `71` 的序列化配置、第一轮交互状态、无主动高亮、第一轮完成后推进到第二轮，以及 `BigRedButton` 重置。场景验证器还会确认 6 个可动零件、实际直接子物体与 txt 下标对应、Meta 父空间单轴约束数值正确、同方向外层行程不短于内层、初始 `round=1`、`child[5]` 固定、根物体整体高亮关闭、各零件必需组件完整、后续轮次初始禁用，且按钮已持久化绑定 `AssemblyController.ResetAll`。
+当前自动验证基线：Unity EditMode 测试 `6/6`、PlayMode 测试 `3/3` 通过。EditMode 包含内部 Collider 忽略策略；PlayMode 会实际加载 `Main.unity`，使用真实 Meta `GrabInteractor` 对第一轮零件执行 Hover、Select、Unselect 和 Unhover，并验证 Highlight Plus 随状态开启和关闭；同时验证 `71` 的序列化配置、第一轮交互状态、无主动高亮、第一轮完成后推进到第二轮，以及 `BigRedButton` 重置。场景验证器还会确认 6 个可动零件、实际直接子物体与 txt 下标对应、Meta 父空间单轴约束数值正确、同方向外层行程不短于内层、初始 `round=1`、`child[5]` 固定、根物体整体高亮关闭、各零件必需组件完整、后续轮次初始禁用，且按钮已持久化绑定 `AssemblyController.ResetAll`。
 
 命令行运行 PlayMode 测试时不要使用 `-nographics`：Meta/OpenXR 原生插件在当前 Windows 环境切换 Play Mode 时会崩溃。保留 `-batchmode` 并启用正常图形初始化时，测试可正常完成。
 

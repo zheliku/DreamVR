@@ -27,6 +27,10 @@ namespace DreamVR.Assembly
         [SerializeField] private HandGrabInteractable _handGrab;
         [SerializeField] private HighlightEffect _highlightEffect;
 
+        [Header("碰撞策略")]
+        [SerializeField] private Transform _collisionRoot;
+        [SerializeField] private bool _ignoreInternalAssemblyCollisions;
+
         private bool _interactionEnabled;
         private bool _guidanceHighlighted;
         private bool _completed;
@@ -69,6 +73,8 @@ namespace DreamVR.Assembly
 
         private void OnEnable()
         {
+            ApplyCollisionPolicy();
+
             if (_controllerGrab != null)
             {
                 _controllerGrab.WhenStateChanged += HandleInteractableStateChanged;
@@ -133,16 +139,49 @@ namespace DreamVR.Assembly
             HandGrabInteractable handGrab,
             HighlightEffect highlightEffect)
         {
+            Configure(
+                childIndex,
+                round,
+                localDirection,
+                maxDistance,
+                _completionThreshold,
+                rigidbody,
+                grabbable,
+                controllerGrab,
+                handGrab,
+                highlightEffect,
+                transform.parent,
+                ignoreInternalAssemblyCollisions: false);
+        }
+
+        public void Configure(
+            int childIndex,
+            int round,
+            Vector3 localDirection,
+            float maxDistance,
+            float completionThreshold,
+            Rigidbody rigidbody,
+            Grabbable grabbable,
+            GrabInteractable controllerGrab,
+            HandGrabInteractable handGrab,
+            HighlightEffect highlightEffect,
+            Transform collisionRoot,
+            bool ignoreInternalAssemblyCollisions)
+        {
             _childIndex = childIndex;
             _round = round;
             _localDirection = localDirection.normalized;
             _maxDistance = Mathf.Max(0.001f, maxDistance);
+            _completionThreshold = Mathf.Clamp(completionThreshold, 0.8f, 1f);
             _rigidbody = rigidbody;
             _grabbable = grabbable;
             _controllerGrab = controllerGrab;
             _handGrab = handGrab;
             _highlightEffect = highlightEffect;
+            _collisionRoot = collisionRoot;
+            _ignoreInternalAssemblyCollisions = ignoreInternalAssemblyCollisions;
             CaptureInitialPose();
+            ApplyCollisionPolicy();
         }
 
         public void CaptureInitialPose()
@@ -214,6 +253,47 @@ namespace DreamVR.Assembly
 
             ReleasedAtEnd?.Invoke(this);
             return true;
+        }
+
+        /// <summary>
+        /// Movable assembly parts must not physically block each other while following their prescribed axis.
+        /// Hand and controller colliders are outside this root and remain unaffected.
+        /// </summary>
+        public void ApplyCollisionPolicy()
+        {
+            if (_collisionRoot == null)
+            {
+                return;
+            }
+
+            Collider[] ownColliders = GetComponentsInChildren<Collider>(includeInactive: true);
+            if (ownColliders.Length == 0)
+            {
+                return;
+            }
+
+            var ownSet = new System.Collections.Generic.HashSet<Collider>(ownColliders);
+            foreach (Collider ownCollider in ownColliders)
+            {
+                if (ownCollider == null)
+                {
+                    continue;
+                }
+
+                foreach (Collider assemblyCollider in
+                         _collisionRoot.GetComponentsInChildren<Collider>(includeInactive: true))
+                {
+                    if (assemblyCollider == null || ownSet.Contains(assemblyCollider))
+                    {
+                        continue;
+                    }
+
+                    Physics.IgnoreCollision(
+                        ownCollider,
+                        assemblyCollider,
+                        _ignoreInternalAssemblyCollisions);
+                }
+            }
         }
 
         public static Vector3 ConstrainLocalPosition(

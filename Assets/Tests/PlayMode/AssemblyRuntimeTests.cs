@@ -30,6 +30,8 @@ namespace DreamVR.Assembly.Tests
             }
 
             yield return null;
+            // AssemblyController.Start performs the authoritative initial reset.
+            yield return null;
 
             Scene scene = SceneManager.GetSceneByPath("Assets/Scenes/Main.unity");
             Assert.That(scene.IsValid() && scene.isLoaded, Is.True);

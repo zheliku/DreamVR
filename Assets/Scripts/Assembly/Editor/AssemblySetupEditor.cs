@@ -13,80 +13,20 @@ using UnityEngine.SceneManagement;
 
 namespace DreamVR.Assembly.Editor
 {
-    public static class AssemblySetupEditor
+    /// <summary>
+    /// Editor-only implementation behind AssemblyConfigurator's VInspector buttons.
+    /// There are intentionally no menu items or separate editor workflow.
+    /// </summary>
+    public static class AssemblyConfiguratorEditorBackend
     {
-        private const string MainScenePath = "Assets/Scenes/Main.unity";
-        private const string DefaultAssemblyName = "71";
-
-        [MenuItem("Tools/DreamVR/装配/配置选中模型")]
-        public static void ConfigureSelectedAssembly()
+        public static void Configure(AssemblyConfigurator configurator)
         {
-            GameObject root = Selection.activeGameObject;
-            if (root == null)
+            if (configurator == null)
             {
-                throw new InvalidOperationException("请先选择装配模型根物体。");
+                throw new ArgumentNullException(nameof(configurator));
             }
 
-            ConfigureAssembly(root);
-            SaveContainingScene(root);
-        }
-
-        [MenuItem("Tools/DreamVR/装配/配置 Main 场景中的 71")]
-        public static void ConfigureMainSceneAssembly()
-        {
-            GameObject root = FindGameObjectInScene(SceneManager.GetActiveScene(), DefaultAssemblyName);
-            if (root == null)
-            {
-                throw new InvalidOperationException(
-                    $"当前场景中找不到名为 {DefaultAssemblyName} 的物体。请先打开 {MainScenePath}。");
-            }
-
-            ConfigureAssembly(root);
-            SaveContainingScene(root);
-        }
-
-        public static void ConfigureMainSceneFromCommandLine()
-        {
-            Scene scene = EditorSceneManager.OpenScene(MainScenePath, OpenSceneMode.Single);
-            GameObject root = FindGameObjectInScene(scene, DefaultAssemblyName);
-            if (root == null)
-            {
-                throw new InvalidOperationException($"{MainScenePath} 中找不到 {DefaultAssemblyName}。");
-            }
-
-            ConfigureAssembly(root);
-            EditorSceneManager.SaveScene(scene);
-            AssetDatabase.SaveAssets();
-            Debug.Log("[DreamVR] Main 场景装配配置完成。");
-        }
-
-        [MenuItem("Tools/DreamVR/装配/验证 Main 场景中的 71")]
-        public static void ValidateMainSceneAssembly()
-        {
-            GameObject root = FindGameObjectInScene(SceneManager.GetActiveScene(), DefaultAssemblyName);
-            if (root == null)
-            {
-                throw new InvalidOperationException(
-                    $"当前场景中找不到名为 {DefaultAssemblyName} 的物体。请先打开 {MainScenePath}。");
-            }
-
-            ValidateAssembly(root);
-        }
-
-        public static void ValidateMainSceneFromCommandLine()
-        {
-            Scene scene = EditorSceneManager.OpenScene(MainScenePath, OpenSceneMode.Single);
-            GameObject root = FindGameObjectInScene(scene, DefaultAssemblyName);
-            if (root == null)
-            {
-                throw new InvalidOperationException($"{MainScenePath} 中找不到 {DefaultAssemblyName}。");
-            }
-
-            ValidateAssembly(root);
-        }
-
-        public static void ConfigureAssembly(GameObject root)
-        {
+            GameObject root = configurator.gameObject;
             if (root == null)
             {
                 throw new ArgumentNullException(nameof(root));
@@ -104,7 +44,7 @@ namespace DreamVR.Assembly.Editor
                 throw new InvalidOperationException($"无法解析模型目录：{modelPath}");
             }
 
-            TextAsset planAsset = FindSinglePlanAsset(directory);
+            TextAsset planAsset = ResolvePlanAsset(configurator, directory);
             IReadOnlyList<DisassemblyStep> steps = DisassemblyPlanParser.Parse(planAsset.text);
             Transform indexedParent = ResolveIndexedParent(root.transform, steps);
 
@@ -116,13 +56,19 @@ namespace DreamVR.Assembly.Editor
             IReadOnlyDictionary<int, float> distances = CalculateTravelDistances(
                 indexedParent,
                 assemblyBounds,
-                steps);
+                steps,
+                configurator);
 
             var parts = new List<AssemblyPart>(steps.Count);
             foreach (DisassemblyStep step in steps)
             {
                 Transform partTransform = indexedParent.GetChild(step.ChildIndex);
-                AssemblyPart part = ConfigurePart(partTransform, step, distances[step.ChildIndex]);
+                AssemblyPart part = ConfigurePart(
+                    partTransform,
+                    step,
+                    distances[step.ChildIndex],
+                    indexedParent,
+                    configurator);
                 parts.Add(part);
                 Debug.Log(
                     $"[DreamVR] round{step.Round} child[{step.ChildIndex}] "
@@ -131,7 +77,7 @@ namespace DreamVR.Assembly.Editor
             }
 
             AssemblyController controller = GetOrAddComponent<AssemblyController>(root);
-            controller.Configure(parts, InteractionExperimentCondition.NoGuidance);
+            controller.Configure(parts, configurator.Condition);
             controller.ResetAllImmediate();
             EditorUtility.SetDirty(controller);
             PrefabUtility.RecordPrefabInstancePropertyModifications(controller);
@@ -139,17 +85,29 @@ namespace DreamVR.Assembly.Editor
 
             DisableRootWideHighlight(root, parts);
             BindResetButton(controller);
-            ValidateAssembly(root);
+            Validate(configurator);
 
             EditorSceneManager.MarkSceneDirty(root.scene);
+            EditorUtility.SetDirty(configurator);
+            if (configurator.SaveSceneAfterConfigure)
+            {
+                EditorSceneManager.SaveScene(root.scene);
+                AssetDatabase.SaveAssets();
+            }
             Debug.Log(
                 $"[DreamVR] 已配置 {parts.Count} 个可动零件；索引父物体={indexedParent.name}；"
-                + "实验条件=NoGuidance。未列出的子物体（包括下标 5）保持固定。",
+                + $"实验条件={configurator.Condition}。未列出的子物体（包括下标 5）保持固定。",
                 root);
         }
 
-        public static void ValidateAssembly(GameObject root)
+        public static void Validate(AssemblyConfigurator configurator)
         {
+            if (configurator == null)
+            {
+                throw new ArgumentNullException(nameof(configurator));
+            }
+
+            GameObject root = configurator.gameObject;
             var errors = new List<string>();
             AssemblyController controller = root.GetComponent<AssemblyController>();
             if (controller == null)
@@ -159,7 +117,7 @@ namespace DreamVR.Assembly.Editor
 
             string modelPath = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(root);
             string directory = Path.GetDirectoryName(modelPath)?.Replace('\\', '/');
-            TextAsset planAsset = FindSinglePlanAsset(directory);
+            TextAsset planAsset = ResolvePlanAsset(configurator, directory);
             IReadOnlyList<DisassemblyStep> steps = DisassemblyPlanParser.Parse(planAsset.text);
             Transform indexedParent = ResolveIndexedParent(root.transform, steps);
             Dictionary<int, DisassemblyStep> expected = steps.ToDictionary(step => step.ChildIndex);
@@ -168,9 +126,9 @@ namespace DreamVR.Assembly.Editor
                 .GroupBy(part => part.ChildIndex)
                 .ToDictionary(group => group.Key, group => group.First());
 
-            if (controller.Condition != InteractionExperimentCondition.NoGuidance)
+            if (controller.Condition != configurator.Condition)
             {
-                errors.Add($"实验条件应为 NoGuidance，实际为 {controller.Condition}。");
+                errors.Add($"实验条件应为 {configurator.Condition}，实际为 {controller.Condition}。");
             }
 
             if (controller.CurrentRound != steps.Min(step => step.Round))
@@ -215,9 +173,9 @@ namespace DreamVR.Assembly.Editor
                     errors.Add($"child[{part.ChildIndex}] 的轮次或方向不匹配 txt。");
                 }
 
-                if (part.MaxDistance <= 0f)
+                if (part.MaxDistance < configurator.MinimumTravelDistance - 0.0001f)
                 {
-                    errors.Add($"child[{part.ChildIndex}] 的最大移动距离无效。");
+                    errors.Add($"child[{part.ChildIndex}] 的最大移动距离小于配置的最小行程。");
                 }
 
                 if (rigidbody == null
@@ -247,9 +205,12 @@ namespace DreamVR.Assembly.Editor
                     errors.Add($"child[{part.ChildIndex}] 的初始交互启用状态不正确。");
                 }
 
-                if (highlight.highlighted)
+                bool shouldShowGuidance = configurator.Condition
+                    != InteractionExperimentCondition.NoGuidance
+                    && shouldBeEnabled;
+                if (highlight.highlighted != shouldShowGuidance)
                 {
-                    errors.Add($"child[{part.ChildIndex}] 在 NoGuidance 初始状态下不应高亮。");
+                    errors.Add($"child[{part.ChildIndex}] 的初始高亮状态与实验条件不一致。");
                 }
             }
 
@@ -326,6 +287,22 @@ namespace DreamVR.Assembly.Editor
                 root);
         }
 
+        private static TextAsset ResolvePlanAsset(AssemblyConfigurator configurator, string directory)
+        {
+            if (configurator.PlanAsset != null)
+            {
+                return configurator.PlanAsset;
+            }
+
+            if (!configurator.FindPlanNextToModel)
+            {
+                throw new InvalidOperationException(
+                    "请在 AssemblyConfigurator 中指定拆卸 txt，或启用“自动查找模型目录中的 txt”。");
+            }
+
+            return FindSinglePlanAsset(directory);
+        }
+
         private static TextAsset FindSinglePlanAsset(string directory)
         {
             string[] guids = AssetDatabase.FindAssets("t:TextAsset", new[] { directory });
@@ -399,7 +376,8 @@ namespace DreamVR.Assembly.Editor
         private static IReadOnlyDictionary<int, float> CalculateTravelDistances(
             Transform indexedParent,
             Bounds assemblyBounds,
-            IReadOnlyList<DisassemblyStep> steps)
+            IReadOnlyList<DisassemblyStep> steps,
+            AssemblyConfigurator configurator)
         {
             var candidates = new List<TravelDistanceCandidate>(steps.Count);
             foreach (DisassemblyStep step in steps)
@@ -416,11 +394,17 @@ namespace DreamVR.Assembly.Editor
                 float partMax = GetAxisMax(partBounds, step.Axis);
                 float partSize = GetAxisSize(partBounds, step.Axis);
                 float assemblySize = GetAxisSize(assemblyBounds, step.Axis);
-                float margin = Mathf.Max(partSize * 0.1f, assemblySize * 0.02f);
+                float margin = Mathf.Max(
+                    partSize * configurator.PartSizeClearanceMultiplier,
+                    assemblySize * configurator.AssemblySizeClearanceMultiplier);
+                margin += configurator.AdditionalClearance;
 
                 float requiredDistance = step.Sign > 0
                     ? assemblyMax - partMin + margin
                     : partMax - assemblyMin + margin;
+                requiredDistance = Mathf.Max(
+                    configurator.MinimumTravelDistance,
+                    requiredDistance * configurator.TravelDistanceMultiplier);
                 candidates.Add(new TravelDistanceCandidate(step, requiredDistance));
             }
 
@@ -430,10 +414,12 @@ namespace DreamVR.Assembly.Editor
         private static AssemblyPart ConfigurePart(
             Transform partTransform,
             DisassemblyStep step,
-            float maxDistance)
+            float maxDistance,
+            Transform indexedParent,
+            AssemblyConfigurator configurator)
         {
             GameObject partObject = partTransform.gameObject;
-            EnsureCollider(partTransform);
+            EnsureCollider(partTransform, configurator.CreateBoxColliderWhenMissing);
 
             Rigidbody rigidbody = GetOrAddComponent<Rigidbody>(partObject);
             rigidbody.useGravity = false;
@@ -468,8 +454,8 @@ namespace DreamVR.Assembly.Editor
             HighlightEffect highlight = GetOrAddComponent<HighlightEffect>(partObject);
             highlight.effectTarget = partTransform;
             highlight.outline = 1f;
-            highlight.outlineColor = new Color(0.15f, 0.85f, 1f, 1f);
-            highlight.outlineWidth = 0.35f;
+            highlight.outlineColor = configurator.ContactOutlineColor;
+            highlight.outlineWidth = configurator.OutlineWidth;
             highlight.glow = 0f;
             highlight.overlay = 0f;
             highlight.SetHighlighted(false);
@@ -480,11 +466,14 @@ namespace DreamVR.Assembly.Editor
                 step.Round,
                 step.LocalDirection,
                 maxDistance,
+                configurator.CompletionThreshold,
                 rigidbody,
                 grabbable,
                 controllerGrab,
                 handGrab,
-                highlight);
+                highlight,
+                indexedParent,
+                configurator.IgnoreInternalAssemblyCollisions);
 
             MarkDirty(partObject.GetComponents<Component>());
             return part;
@@ -560,11 +549,17 @@ namespace DreamVR.Assembly.Editor
                 && Mathf.Abs(constraint.Value - expected) <= 0.0001f;
         }
 
-        private static void EnsureCollider(Transform part)
+        private static void EnsureCollider(Transform part, bool createBoxColliderWhenMissing)
         {
             if (part.GetComponentInChildren<Collider>(includeInactive: true) != null)
             {
                 return;
+            }
+
+            if (!createBoxColliderWhenMissing)
+            {
+                throw new InvalidOperationException(
+                    $"{part.name} 缺少 Collider；请启用自动补充 BoxCollider 或手动添加合适的 Collider。 ");
             }
 
             if (!TryCalculateBounds(part, part, out Bounds localBounds))

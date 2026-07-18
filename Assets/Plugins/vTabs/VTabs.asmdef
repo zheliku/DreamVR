@@ -1,12 +1,10 @@
 {
-    "name": "DreamVR.Assembly",
-    "rootNamespace": "DreamVR.Assembly",
-    "references": [
-        "Oculus.Interaction",
-        "HighlightPlus.Runtime",
-        "VInspector"
+    "name": "VTabs",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
     ],
-    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
