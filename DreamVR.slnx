@@ -1,9 +1,12 @@
 ﻿<Solution>
+  <Project Path="ShapesRuntime.csproj" />
   <Project Path="VHierarchy.csproj" />
   <Project Path="HighlightPlus.Runtime.csproj" />
   <Project Path="VFolders.csproj" />
+  <Project Path="ShapesEditor.csproj" />
   <Project Path="DreamVR.Assembly.Editor.csproj" />
   <Project Path="DreamVR.Assembly.csproj" />
+  <Project Path="ShapesSamples.csproj" />
   <Project Path="VTabs.csproj" />
   <Project Path="VInspector.csproj" />
   <Project Path="HighlightPlus.Demo.csproj" />

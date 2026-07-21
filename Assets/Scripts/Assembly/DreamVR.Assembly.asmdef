@@ -4,7 +4,8 @@
     "references": [
         "Oculus.Interaction",
         "HighlightPlus.Runtime",
-        "VInspector"
+        "VInspector",
+        "ShapesRuntime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

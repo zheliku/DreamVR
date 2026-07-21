@@ -4,7 +4,8 @@
     "references": [
         "DreamVR.Assembly",
         "Oculus.Interaction",
-        "HighlightPlus.Runtime"
+        "HighlightPlus.Runtime",
+        "ShapesRuntime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

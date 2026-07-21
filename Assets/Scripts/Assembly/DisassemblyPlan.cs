@@ -6,54 +6,43 @@ using UnityEngine;
 
 namespace DreamVR.Assembly
 {
-    public enum DisassemblyAxis
-    {
-        X,
-        Y,
-        Z
-    }
-
     [Serializable]
     public sealed class DisassemblyStep
     {
-        public DisassemblyStep(int round, int childIndex, DisassemblyAxis axis, int sign)
+        public DisassemblyStep(int round, int partNumber, Vector3 hintLocalDirection)
         {
             if (round < 1)
             {
                 throw new ArgumentOutOfRangeException(nameof(round));
             }
 
-            if (childIndex < 0)
+            if (partNumber < 1)
             {
-                throw new ArgumentOutOfRangeException(nameof(childIndex));
+                throw new ArgumentOutOfRangeException(nameof(partNumber));
             }
 
-            if (sign != -1 && sign != 1)
+            if (hintLocalDirection.sqrMagnitude <= Mathf.Epsilon)
             {
-                throw new ArgumentOutOfRangeException(nameof(sign));
+                throw new ArgumentException("提示方向不能为零向量。", nameof(hintLocalDirection));
             }
 
             Round = round;
-            ChildIndex = childIndex;
-            Axis = axis;
-            Sign = sign;
+            PartNumber = partNumber;
+            HintLocalDirection = hintLocalDirection.normalized;
         }
 
         public int Round { get; }
 
-        public int ChildIndex { get; }
+        /// <summary>The human-facing identifier written in the txt file. It is one-based.</summary>
+        public int PartNumber { get; }
 
-        public DisassemblyAxis Axis { get; }
+        /// <summary>The zero-based direct-child index used by Unity's Transform API.</summary>
+        public int ChildIndex => PartNumber - 1;
 
-        public int Sign { get; }
-
-        public Vector3 LocalDirection => Axis switch
-        {
-            DisassemblyAxis.X => Vector3.right * Sign,
-            DisassemblyAxis.Y => Vector3.up * Sign,
-            DisassemblyAxis.Z => Vector3.forward * Sign,
-            _ => throw new ArgumentOutOfRangeException()
-        };
+        /// <summary>
+        /// Direction metadata in the indexed parent's local space. It drives visual guidance only.
+        /// </summary>
+        public Vector3 HintLocalDirection { get; }
     }
 
     public static class DisassemblyPlanParser
@@ -63,7 +52,11 @@ namespace DreamVR.Assembly
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         private static readonly Regex EntryPattern = new(
-            @"\(\s*(?<index>\d+)\s*,\s*(?<sign>[+-])\s*(?<axis>[XYZ])\s*\)",
+            @"\((?<content>[^()]*)\)",
+            RegexOptions.Compiled);
+
+        private static readonly Regex DirectionComponentPattern = new(
+            @"(?<sign>[+-])(?<axis>[XYZ])",
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public static IReadOnlyList<DisassemblyStep> Parse(string text)
@@ -74,7 +67,7 @@ namespace DreamVR.Assembly
             }
 
             var steps = new List<DisassemblyStep>();
-            var childIndices = new HashSet<int>();
+            var partNumbers = new HashSet<int>();
             string[] lines = text.Replace("\r\n", "\n").Replace('\r', '\n').Split('\n');
 
             for (int lineIndex = 0; lineIndex < lines.Length; lineIndex++)
@@ -107,17 +100,37 @@ namespace DreamVR.Assembly
 
                 foreach (Match entryMatch in entryMatches)
                 {
-                    int childIndex = int.Parse(entryMatch.Groups["index"].Value);
-                    if (!childIndices.Add(childIndex))
+                    string content = entryMatch.Groups["content"].Value;
+                    string[] fields = content
+                        .Split(',')
+                        .Select(field => field.Trim())
+                        .Where(field => field.Length > 0)
+                        .ToArray();
+                    if (fields.Length < 2 || !int.TryParse(fields[0], out int partNumber))
                     {
-                        throw new FormatException($"子物体下标 {childIndex} 重复出现。");
+                        throw new FormatException(
+                            $"第 {lineIndex + 1} 行零件条目格式错误：({content})");
                     }
 
-                    int sign = entryMatch.Groups["sign"].Value == "+" ? 1 : -1;
-                    DisassemblyAxis axis = Enum.Parse<DisassemblyAxis>(
-                        entryMatch.Groups["axis"].Value,
-                        ignoreCase: true);
-                    steps.Add(new DisassemblyStep(round, childIndex, axis, sign));
+                    if (partNumber < 1)
+                    {
+                        throw new FormatException(
+                            $"零件序号必须从 1 开始，不能使用 {partNumber}。");
+                    }
+
+                    if (!partNumbers.Add(partNumber))
+                    {
+                        throw new FormatException($"零件序号 {partNumber} 重复出现。");
+                    }
+
+                    string directionExpression = string.Concat(fields.Skip(1))
+                        .Replace(" ", string.Empty)
+                        .ToUpperInvariant();
+                    Vector3 direction = ParseDirection(
+                        directionExpression,
+                        lineIndex + 1,
+                        content);
+                    steps.Add(new DisassemblyStep(round, partNumber, direction));
                 }
             }
 
@@ -128,49 +141,46 @@ namespace DreamVR.Assembly
 
             return steps
                 .OrderBy(step => step.Round)
-                .ThenBy(step => step.ChildIndex)
+                .ThenBy(step => step.PartNumber)
                 .ToArray();
         }
-    }
 
-    public readonly struct TravelDistanceCandidate
-    {
-        public TravelDistanceCandidate(DisassemblyStep step, float requiredDistance)
+        private static Vector3 ParseDirection(
+            string expression,
+            int lineNumber,
+            string originalEntry)
         {
-            Step = step ?? throw new ArgumentNullException(nameof(step));
-            RequiredDistance = Mathf.Max(0.001f, requiredDistance);
-        }
-
-        public DisassemblyStep Step { get; }
-
-        public float RequiredDistance { get; }
-    }
-
-    public static class DisassemblyTravelCalculator
-    {
-        public static IReadOnlyDictionary<int, float> EnforceOuterRoundsNotShorter(
-            IReadOnlyList<TravelDistanceCandidate> candidates)
-        {
-            if (candidates == null || candidates.Count == 0)
+            MatchCollection matches = DirectionComponentPattern.Matches(expression);
+            string parsedExpression = string.Concat(
+                matches.Cast<Match>().Select(match => match.Value.ToUpperInvariant()));
+            if (matches.Count == 0 || parsedExpression != expression)
             {
-                throw new ArgumentException("至少需要一个移动距离候选项。", nameof(candidates));
+                throw new FormatException(
+                    $"第 {lineNumber} 行方向格式错误：({originalEntry})");
             }
 
-            var result = new Dictionary<int, float>();
-            foreach (IGrouping<(DisassemblyAxis Axis, int Sign), TravelDistanceCandidate> group in
-                     candidates.GroupBy(candidate => (candidate.Step.Axis, candidate.Step.Sign)))
+            var usedAxes = new HashSet<char>();
+            Vector3 direction = Vector3.zero;
+            foreach (Match match in matches)
             {
-                float innerDistance = 0f;
-                foreach (TravelDistanceCandidate candidate in group
-                             .OrderByDescending(item => item.Step.Round)
-                             .ThenBy(item => item.Step.ChildIndex))
+                char axis = char.ToUpperInvariant(match.Groups["axis"].Value[0]);
+                if (!usedAxes.Add(axis))
                 {
-                    innerDistance = Mathf.Max(innerDistance, candidate.RequiredDistance);
-                    result[candidate.Step.ChildIndex] = innerDistance;
+                    throw new FormatException(
+                        $"第 {lineNumber} 行方向轴 {axis} 重复：({originalEntry})");
                 }
+
+                float sign = match.Groups["sign"].Value == "+" ? 1f : -1f;
+                direction += axis switch
+                {
+                    'X' => Vector3.right * sign,
+                    'Y' => Vector3.up * sign,
+                    'Z' => Vector3.forward * sign,
+                    _ => throw new ArgumentOutOfRangeException()
+                };
             }
 
-            return result;
+            return direction.normalized;
         }
     }
 }

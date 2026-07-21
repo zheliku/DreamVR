@@ -6,14 +6,28 @@ using UnityEngine;
 
 namespace DreamVR.Assembly
 {
+    public readonly struct AssemblyPartPose
+    {
+        public AssemblyPartPose(Vector3 localPosition, Quaternion localRotation)
+        {
+            LocalPosition = localPosition;
+            LocalRotation = localRotation;
+        }
+
+        public Vector3 LocalPosition { get; }
+
+        public Quaternion LocalRotation { get; }
+    }
+
     [DisallowMultipleComponent]
     public sealed class AssemblyPart : MonoBehaviour
     {
-        [SerializeField] private int _childIndex;
-        [SerializeField] private int _round;
-        [SerializeField] private Vector3 _localDirection = Vector3.forward;
-        [SerializeField, Min(0.001f)] private float _maxDistance = 0.1f;
-        [SerializeField, Range(0.8f, 1f)] private float _completionThreshold = 0.98f;
+        [SerializeField, Min(1)] private int _partNumber = 1;
+        [SerializeField, Min(0)] private int _childIndex;
+        [SerializeField, Min(1)] private int _round = 1;
+        [SerializeField] private Vector3 _hintLocalDirection = Vector3.forward;
+        [SerializeField, Min(0f)] private float _minimumOperationDistance = 0.005f;
+        [SerializeField, Min(0f)] private float _minimumOperationAngle = 2f;
 
         [Header("初始姿态")]
         [SerializeField] private bool _hasInitialPose;
@@ -26,42 +40,45 @@ namespace DreamVR.Assembly
         [SerializeField] private GrabInteractable _controllerGrab;
         [SerializeField] private HandGrabInteractable _handGrab;
         [SerializeField] private HighlightEffect _highlightEffect;
+        [SerializeField] private AssemblyDirectionIndicator _directionIndicator;
+        [SerializeField] private Color _activeOutlineColor = new(0.15f, 0.85f, 1f, 1f);
+        [SerializeField] private Color _guidanceOutlineColor = new(0.2f, 1f, 0.35f, 1f);
+        [SerializeField] private Color _completedOutlineColor = new(1f, 0.55f, 0.1f, 1f);
 
         [Header("碰撞策略")]
-        [SerializeField] private Transform _collisionRoot;
-        [SerializeField] private bool _ignoreInternalAssemblyCollisions;
+        [SerializeField] private bool _disablePhysicalCollisions = true;
 
         private bool _interactionEnabled;
         private bool _guidanceHighlighted;
+        private bool _directionGuidanceVisible;
         private bool _completed;
+        private bool _completedInteractionAppearance;
+        private bool _hasPendingOperation;
+        private bool _suspendingInteraction;
+        private bool _grabbableWasEnabledBeforeSuspension;
+        private AssemblyPartPose _operationStartPose;
 
-        public event Action<AssemblyPart> ReleasedAtEnd;
+        public event Action<AssemblyPart, AssemblyPartPose, AssemblyPartPose> OperationCommitted;
+
+        public int PartNumber => _partNumber;
 
         public int ChildIndex => _childIndex;
 
         public int Round => _round;
 
-        public Vector3 LocalDirection => _localDirection;
-
-        public float MaxDistance => _maxDistance;
+        public Vector3 HintLocalDirection => _hintLocalDirection;
 
         public bool IsCompleted => _completed;
 
         public bool InteractionEnabled => _interactionEnabled;
 
-        public float Progress
-        {
-            get
-            {
-                if (!_hasInitialPose || _maxDistance <= Mathf.Epsilon)
-                {
-                    return 0f;
-                }
+        public bool HasPendingOperation => _hasPendingOperation;
 
-                float distance = Vector3.Dot(transform.localPosition - _initialLocalPosition, _localDirection);
-                return Mathf.Clamp01(distance / _maxDistance);
-            }
-        }
+        public bool IsInteractionSuspended => _suspendingInteraction;
+
+        public bool GuidanceHighlighted => _guidanceHighlighted;
+
+        public bool DirectionGuidanceVisible => _directionGuidanceVisible;
 
         private void Awake()
         {
@@ -73,8 +90,6 @@ namespace DreamVR.Assembly
 
         private void OnEnable()
         {
-            ApplyCollisionPolicy();
-
             if (_controllerGrab != null)
             {
                 _controllerGrab.WhenStateChanged += HandleInteractableStateChanged;
@@ -90,6 +105,7 @@ namespace DreamVR.Assembly
                 _grabbable.WhenPointerEventRaised += HandlePointerEvent;
             }
 
+            _directionIndicator?.SetGuidanceVisible(_directionGuidanceVisible);
             RefreshHighlight();
         }
 
@@ -110,76 +126,60 @@ namespace DreamVR.Assembly
                 _grabbable.WhenPointerEventRaised -= HandlePointerEvent;
             }
 
+            if (!_suspendingInteraction)
+            {
+                CancelPendingOperation(restoreStartPose: true);
+            }
+
+            _directionIndicator?.SetGuidanceVisible(false);
             SetHighlight(false);
         }
 
-        private void LateUpdate()
-        {
-            if (!_hasInitialPose)
-            {
-                return;
-            }
-
-            transform.localPosition = ConstrainLocalPosition(
-                _initialLocalPosition,
-                transform.localPosition,
-                _localDirection,
-                _maxDistance);
-            transform.localRotation = _initialLocalRotation;
-        }
-
         public void Configure(
+            int partNumber,
             int childIndex,
             int round,
-            Vector3 localDirection,
-            float maxDistance,
-            Rigidbody rigidbody,
-            Grabbable grabbable,
-            GrabInteractable controllerGrab,
-            HandGrabInteractable handGrab,
-            HighlightEffect highlightEffect)
-        {
-            Configure(
-                childIndex,
-                round,
-                localDirection,
-                maxDistance,
-                _completionThreshold,
-                rigidbody,
-                grabbable,
-                controllerGrab,
-                handGrab,
-                highlightEffect,
-                transform.parent,
-                ignoreInternalAssemblyCollisions: false);
-        }
-
-        public void Configure(
-            int childIndex,
-            int round,
-            Vector3 localDirection,
-            float maxDistance,
-            float completionThreshold,
+            Vector3 hintLocalDirection,
+            float minimumOperationDistance,
+            float minimumOperationAngle,
             Rigidbody rigidbody,
             Grabbable grabbable,
             GrabInteractable controllerGrab,
             HandGrabInteractable handGrab,
             HighlightEffect highlightEffect,
-            Transform collisionRoot,
-            bool ignoreInternalAssemblyCollisions)
+            AssemblyDirectionIndicator directionIndicator,
+            bool disablePhysicalCollisions,
+            Color activeOutlineColor,
+            Color guidanceOutlineColor,
+            Color completedOutlineColor,
+            float seeThroughIntensity,
+            float seeThroughTintAlpha,
+            float seeThroughBorder,
+            float seeThroughBorderWidth)
         {
-            _childIndex = childIndex;
-            _round = round;
-            _localDirection = localDirection.normalized;
-            _maxDistance = Mathf.Max(0.001f, maxDistance);
-            _completionThreshold = Mathf.Clamp(completionThreshold, 0.8f, 1f);
+            _partNumber = Mathf.Max(1, partNumber);
+            _childIndex = Mathf.Max(0, childIndex);
+            _round = Mathf.Max(1, round);
+            _hintLocalDirection = hintLocalDirection.sqrMagnitude > Mathf.Epsilon
+                ? hintLocalDirection.normalized
+                : Vector3.forward;
+            _minimumOperationDistance = Mathf.Max(0f, minimumOperationDistance);
+            _minimumOperationAngle = Mathf.Max(0f, minimumOperationAngle);
             _rigidbody = rigidbody;
             _grabbable = grabbable;
             _controllerGrab = controllerGrab;
             _handGrab = handGrab;
             _highlightEffect = highlightEffect;
-            _collisionRoot = collisionRoot;
-            _ignoreInternalAssemblyCollisions = ignoreInternalAssemblyCollisions;
+            _directionIndicator = directionIndicator;
+            _disablePhysicalCollisions = disablePhysicalCollisions;
+            _activeOutlineColor = activeOutlineColor;
+            _guidanceOutlineColor = guidanceOutlineColor;
+            _completedOutlineColor = completedOutlineColor;
+            ConfigureSeeThroughHighlight(
+                seeThroughIntensity,
+                seeThroughTintAlpha,
+                seeThroughBorder,
+                seeThroughBorderWidth);
             CaptureInitialPose();
             ApplyCollisionPolicy();
         }
@@ -191,18 +191,83 @@ namespace DreamVR.Assembly
             _hasInitialPose = true;
         }
 
+        public AssemblyPartPose CaptureCurrentPose()
+        {
+            return new AssemblyPartPose(transform.localPosition, transform.localRotation);
+        }
+
+        public bool BeginOperationRecording()
+        {
+            if (!_interactionEnabled || _suspendingInteraction)
+            {
+                return false;
+            }
+
+            _operationStartPose = CaptureCurrentPose();
+            _hasPendingOperation = true;
+            return true;
+        }
+
+        public bool CompleteOperationRecording()
+        {
+            if (!_hasPendingOperation || _suspendingInteraction)
+            {
+                return false;
+            }
+
+            AssemblyPartPose before = _operationStartPose;
+            AssemblyPartPose after = CaptureCurrentPose();
+            _hasPendingOperation = false;
+
+            float positionDelta = Vector3.Distance(before.LocalPosition, after.LocalPosition);
+            float rotationDelta = Quaternion.Angle(before.LocalRotation, after.LocalRotation);
+            if (positionDelta < _minimumOperationDistance
+                && rotationDelta < _minimumOperationAngle)
+            {
+                RestorePose(before);
+                return false;
+            }
+
+            ClearVelocities();
+            OperationCommitted?.Invoke(this, before, after);
+            return true;
+        }
+
+        public void CancelPendingOperation(bool restoreStartPose)
+        {
+            if (!_hasPendingOperation)
+            {
+                return;
+            }
+
+            AssemblyPartPose startPose = _operationStartPose;
+            _hasPendingOperation = false;
+            if (restoreStartPose)
+            {
+                RestorePose(startPose);
+            }
+        }
+
+        public void RestorePose(AssemblyPartPose pose)
+        {
+            ClearVelocities();
+            transform.localPosition = pose.LocalPosition;
+            transform.localRotation = pose.LocalRotation;
+            Physics.SyncTransforms();
+        }
+
         public void SetInteractionEnabled(bool enabled)
         {
-            _interactionEnabled = enabled && !_completed;
+            _interactionEnabled = enabled;
 
             if (_controllerGrab != null)
             {
-                _controllerGrab.enabled = _interactionEnabled;
+                _controllerGrab.enabled = enabled;
             }
 
             if (_handGrab != null)
             {
-                _handGrab.enabled = _interactionEnabled;
+                _handGrab.enabled = enabled;
             }
 
             RefreshHighlight();
@@ -214,100 +279,99 @@ namespace DreamVR.Assembly
             RefreshHighlight();
         }
 
+        public void SetDirectionGuidanceVisible(bool visible)
+        {
+            _directionGuidanceVisible = visible;
+            _directionIndicator?.SetGuidanceVisible(visible);
+        }
+
+        public void SetCompletedInteractionAppearance(bool enabled)
+        {
+            _completedInteractionAppearance = enabled && _completed;
+            RefreshHighlight();
+        }
+
         public void MarkCompleted(bool completed)
         {
             _completed = completed;
-            if (completed)
+            if (!completed)
             {
-                SetInteractionEnabled(false);
+                _completedInteractionAppearance = false;
             }
+
+            RefreshHighlight();
         }
 
         public void ResetPart()
         {
             _completed = false;
+            _completedInteractionAppearance = false;
             _guidanceHighlighted = false;
+            _directionGuidanceVisible = false;
+            _hasPendingOperation = false;
             SetInteractionEnabled(false);
-
-            if (_rigidbody != null)
-            {
-                _rigidbody.linearVelocity = Vector3.zero;
-                _rigidbody.angularVelocity = Vector3.zero;
-            }
+            _directionIndicator?.SetGuidanceVisible(false);
 
             if (_hasInitialPose)
             {
-                transform.localPosition = _initialLocalPosition;
-                transform.localRotation = _initialLocalRotation;
+                RestorePose(new AssemblyPartPose(_initialLocalPosition, _initialLocalRotation));
             }
 
             SetHighlight(false);
         }
 
-        public bool EvaluateCompletionAfterRelease()
+        public void SuspendInteractionForPoseRestore()
         {
-            if (!_interactionEnabled || _completed || Progress < _completionThreshold)
+            _suspendingInteraction = true;
+            SetInteractionEnabled(false);
+            SetGuidanceHighlighted(false);
+            SetDirectionGuidanceVisible(false);
+            if (_grabbable != null)
             {
-                return false;
+                _grabbableWasEnabledBeforeSuspension = _grabbable.enabled;
+                _grabbable.enabled = false;
             }
-
-            ReleasedAtEnd?.Invoke(this);
-            return true;
         }
 
-        /// <summary>
-        /// Movable assembly parts must not physically block each other while following their prescribed axis.
-        /// Hand and controller colliders are outside this root and remain unaffected.
-        /// </summary>
+        public void RestoreInteractionAfterPoseRestore()
+        {
+            if (_grabbable != null)
+            {
+                _grabbable.enabled = _grabbableWasEnabledBeforeSuspension;
+            }
+
+            _suspendingInteraction = false;
+            ClearVelocities();
+            RefreshHighlight();
+        }
+
         public void ApplyCollisionPolicy()
         {
-            if (_collisionRoot == null)
+            foreach (Collider collider in GetComponentsInChildren<Collider>(includeInactive: true))
             {
-                return;
+                if (collider != null)
+                {
+                    collider.isTrigger = _disablePhysicalCollisions;
+                }
             }
 
-            Collider[] ownColliders = GetComponentsInChildren<Collider>(includeInactive: true);
-            if (ownColliders.Length == 0)
+            if (_rigidbody != null)
             {
-                return;
-            }
-
-            var ownSet = new System.Collections.Generic.HashSet<Collider>(ownColliders);
-            foreach (Collider ownCollider in ownColliders)
-            {
-                if (ownCollider == null)
-                {
-                    continue;
-                }
-
-                foreach (Collider assemblyCollider in
-                         _collisionRoot.GetComponentsInChildren<Collider>(includeInactive: true))
-                {
-                    if (assemblyCollider == null || ownSet.Contains(assemblyCollider))
-                    {
-                        continue;
-                    }
-
-                    Physics.IgnoreCollision(
-                        ownCollider,
-                        assemblyCollider,
-                        _ignoreInternalAssemblyCollisions);
-                }
+                // Meta scores the colliders directly, so collision detection stays enabled while
+                // trigger colliders remove all physical contact response.
+                _rigidbody.detectCollisions = true;
             }
         }
 
-        public static Vector3 ConstrainLocalPosition(
-            Vector3 initialPosition,
-            Vector3 candidatePosition,
-            Vector3 localDirection,
-            float maxDistance)
+        private void ClearVelocities()
         {
-            Vector3 direction = localDirection.sqrMagnitude > Mathf.Epsilon
-                ? localDirection.normalized
-                : Vector3.forward;
-            float distance = Vector3.Dot(candidatePosition - initialPosition, direction);
-            distance = Mathf.Clamp(distance, 0f, Mathf.Max(0f, maxDistance));
-            return initialPosition + direction * distance;
+            if (_rigidbody == null)
+            {
+                return;
+            }
+
+            _rigidbody.linearVelocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
         }
 
         private void HandleInteractableStateChanged(InteractableStateChangeArgs _)
@@ -317,18 +381,76 @@ namespace DreamVR.Assembly
 
         private void HandlePointerEvent(PointerEvent pointerEvent)
         {
-            if ((pointerEvent.Type == PointerEventType.Unselect || pointerEvent.Type == PointerEventType.Cancel)
-                && EvaluateCompletionAfterRelease())
+            switch (pointerEvent.Type)
             {
-                RefreshHighlight();
+                case PointerEventType.Select:
+                    BeginOperationRecording();
+                    break;
+                case PointerEventType.Unselect:
+                    CompleteOperationRecording();
+                    break;
+                case PointerEventType.Cancel:
+                    if (!_suspendingInteraction)
+                    {
+                        CancelPendingOperation(restoreStartPose: true);
+                    }
+                    break;
             }
+
+            RefreshHighlight();
         }
 
         private void RefreshHighlight()
         {
             bool contactHighlight = _interactionEnabled
                 && (IsHoveringOrSelected(_controllerGrab) || IsHoveringOrSelected(_handGrab));
+            ApplyHighlightStyle(contactHighlight);
             SetHighlight(contactHighlight || _guidanceHighlighted);
+        }
+
+        private void ApplyHighlightStyle(bool contactHighlight)
+        {
+            if (_highlightEffect == null)
+            {
+                return;
+            }
+
+            Color stateColor = contactHighlight
+                ? (_completedInteractionAppearance
+                    ? _completedOutlineColor
+                    : _activeOutlineColor)
+                : (_guidanceHighlighted
+                    ? _guidanceOutlineColor
+                    : _activeOutlineColor);
+            _highlightEffect.outlineColor = stateColor;
+            _highlightEffect.seeThroughTintColor = stateColor;
+            _highlightEffect.seeThroughBorderColor = stateColor;
+        }
+
+        private void ConfigureSeeThroughHighlight(
+            float intensity,
+            float tintAlpha,
+            float border,
+            float borderWidth)
+        {
+            if (_highlightEffect == null)
+            {
+                return;
+            }
+
+            _highlightEffect.seeThrough = SeeThroughMode.WhenHighlighted;
+            _highlightEffect.seeThroughOccluderMask = -1;
+            _highlightEffect.seeThroughOccluderMaskAccurate = false;
+            _highlightEffect.seeThroughDepthOffset = 0f;
+            _highlightEffect.seeThroughMaxDepth = 0f;
+            _highlightEffect.seeThroughFadeRange = 0f;
+            _highlightEffect.seeThroughIntensity = Mathf.Clamp(intensity, 0.01f, 5f);
+            _highlightEffect.seeThroughTintAlpha = Mathf.Clamp01(tintAlpha);
+            _highlightEffect.seeThroughNoise = 0f;
+            _highlightEffect.seeThroughBorder = Mathf.Clamp01(border);
+            _highlightEffect.seeThroughBorderWidth = Mathf.Max(0f, borderWidth);
+            _highlightEffect.seeThroughBorderOnly = false;
+            _highlightEffect.seeThroughOrdered = true;
         }
 
         private static bool IsHoveringOrSelected(IInteractableView interactable)

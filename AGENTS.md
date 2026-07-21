@@ -2,144 +2,164 @@
 
 ## 项目目标
 
-DreamVR 是一个 Unity VR 零件装配项目。研究目标是比较三种拆卸交互配置对用户的影响：无主动提示、仅高亮当前轮次零件、同时高亮当前轮次零件并显示拆卸方向。当前里程碑先实现第一种 `NoGuidance`：让 `Assets/Scenes/Main.unity` 中 `71` 模型的零件支持 Meta XR Interaction SDK 抓取；将每个可动零件限制在父物体局部坐标系的单一轴向和最大行程内；在手部或手柄接近可抓取零件时显示交互反馈；并通过场景中已有的红色按钮重置所有零件。
+DreamVR 是一个 Unity VR 零件拆卸实验项目。所有列入拆卸 txt 的零件在任何轮次、任何完成状态下都可以自由抓取、平移和旋转。txt 的 `round` 与方向只控制实验视觉指引，绝不控制抓取权限或运动约束。
 
-实验中的“主动提示”和“可抓取反馈”是两套独立机制：
+实验条件：
 
-- `NoGuidance`：不主动暴露当前轮次零件或方向，但接近当前可抓取零件时仍显示高亮反馈。
-- `CurrentPartHighlight`：持续高亮当前轮次可拆卸零件，并保留接近反馈。
-- `CurrentPartHighlightAndDirection`：持续高亮当前轮次零件并显示方向，同时保留接近反馈。
+- `NoGuidance`：不显示拆卸顺序和方向。仍保留手/手柄接近时的交互反馈。
+- `CurrentPartHighlight`：持续高亮当前指引轮次的未完成零件，不显示方向箭头。
+- `CurrentPartHighlightAndDirection`：在顺序高亮基础上，用 Shapes 箭头显示每个当前零件的父空间拆卸方向。
 
-## 已确认的项目状态
+“交互反馈”和“实验指引”是两套独立状态：
 
-- Unity 版本：`6000.3.11f1`。
-- 渲染管线：URP 17.3.0。
-- XR 技术栈：Meta XR SDK All `203.0.0`、OpenXR、XR Plug-in Management 和 Input System。
-- `Main.unity` 中的交互设备：`OVRComprehensiveInteractionRig`。
-- `Main.unity` 中的装配模型实例：`71`，来源为 `Assets/Art/Models/E1/71.fbx`。
-- `71` 根物体当前已经挂载 Highlight Plus 的 `HighlightEffect`，而且序列化状态为已高亮。实现零件级反馈时，必须替换或禁用这个始终开启的整体高亮。
-- `Main.unity` 中的重置控件是 Meta 示例预制体实例 `BigRedButton`。它已经包含 `PokeInteractable` 和 `InteractableUnityEventWrapper`，重置功能应接入其 `WhenSelect` 事件。场景中已经为按钮添加了 `Reset` 文本。
-- 高亮方案：位于 `Assets/HighlightPlus` 的 Highlight Plus。
-- 除导入的插件、示例和教程内容外，项目目前没有自有运行时代码。
+- 交互反馈：手或手柄 Hover/Select 时显示，默认青色；优先级最高。
+- 顺序指引：仅后两种实验条件显示，默认绿色，持续标识当前 round。
+- 已交互反馈：零件首次产生有效抓放后成为已交互状态，再次 Hover/Select 时默认显示橙色。
+- 方向指引：仅 `CurrentPartHighlightAndDirection` 显示，默认黄色 Shapes 三维箭头。
 
-## 源数据
+所有零件级高亮均启用 Highlight Plus `SeeThroughMode.WhenHighlighted`。零件被外壳或其他零件遮挡时，遮挡区域仍使用当前状态颜色显示透视轮廓和半透明着色；未处于交互反馈或顺序指引状态的零件不显示透视效果。
 
-移动方向文件为 `Assets/Art/Models/E1/E1.txt`：
+## 技术栈
+
+- Unity `6000.3.11f1`。
+- URP 17.3.0。
+- Meta XR SDK All `203.0.0`、OpenXR、XR Plug-in Management、Input System。
+- Highlight Plus：`Assets/HighlightPlus`。
+- Shapes：`Assets/Plugins/Shapes`，运行时程序集名 `ShapesRuntime`。
+- 项目代码：`Assets/Scripts/Assembly`。
+- 场景：`Assets/Scenes/Main.unity`。
+- 交互 Rig：`OVRComprehensiveInteractionRig`。
+
+禁止修改 Meta SDK、Highlight Plus、Shapes 或其他第三方源码。
+
+## 批量模型目录
+
+模型位于 `Assets/Art/Models`：
 
 ```text
-round1: (1, -Z), (7, +Z)
-round2: (2, -Z), (6, +Z)
-round3: (3, -Z), (4, +Z)
+Assets/Art/Models/
+  Easy/
+    E1/  71.fbx + E1.txt + E1.png
+    E2/  *.fbx + E2.txt + E2.png
+    ...
+  Medium/
+    M1/  *.fbx + M1.txt + M1.png
+    ...
+  Hard/
+    H1/  *.fbx + H1.txt + H1.png
+    ...
 ```
 
-方向相对于模型父物体，而不是世界坐标系。`E1.txt` 使用从 0 开始的直接子物体下标。`round` 定义拆卸顺序：同一轮次内的零件可按任意先后拆卸，只有当前轮次全部到达拆卸终点并松手后，下一轮次才可交互。
+每个模型目录应只有一个 FBX、一个拆卸 txt 和一个示意 PNG。PNG 只供实验人员核对，不参与运行时逻辑；一键配置会把同目录 PNG 自动回填到 `Reference Image`。配置器默认从 FBX 所在目录自动查找唯一 txt；目录中没有 txt 或存在多个 txt 时，必须显式指定 `Plan Asset`。
 
-下标 `5` 是固定件，不添加抓取组件。其他未列入 `E1.txt` 的子物体同样保持固定，除非后续数据明确指定。
+`Extra/43` 目前直接把三个文件放在 `Extra` 下，也能自动配置，因为该目录只有一个 txt。`Assets/Art/Models/world_0155.fbx` 同目录没有 txt，不能自动判断数据，必须先整理到独立目录或显式指定 txt。
 
-最大移动距离由 Editor 配置工具根据 Renderer 包围盒自动计算：零件移动到终点时必须完全越过装配体沿目标轴的外边界，并增加与零件尺寸相关的安全间隙。随后按相同轴向和正负方向从内层向外层执行单调约束，保证外层轮次的最大距离不小于任何内层轮次，同时每个零件仍有足够行程脱离装配体。
+## TXT 语义
 
-添加组件前，必须在 Unity Editor 中根据导入模型的直接子物体解析并确认零基下标。若 FBX 根物体包含额外容器层，配置工具应选择能解析所有下标且 Renderer 命中率最高的直接父物体。解析后把实际 `Transform` 引用序列化到场景配置中，避免运行时依赖层级顺序。
+txt 零件序号从 **1** 开始：
 
-## 计划中的运行时设计
+```text
+childIndex = partNumber - 1
+```
 
-项目自有代码统一放在 `Assets/Scripts/Assembly` 下。禁止修改 Meta SDK 包文件或 Highlight Plus 源码。
+例如 `part[1]` 对应 Unity `child[0]`。序号 `0` 非法。未列入 txt 的直接子物体保持固定，不添加装配抓取组件。
 
-### AssemblyPart
+支持方向格式：
 
-每个可动零件挂载一个 `AssemblyPart` 组件，负责管理：
+```text
+(1, -Z)
+(2, +Y-Z)
+(3, -X, +Z)
+```
 
-- 序列化的零件引用、轮次、父物体局部轴向及正负方向、最大移动距离。
-- 初始化时记录的局部位置和局部旋转。
-- Meta Interactable 与零件级 Highlight Plus 效果的引用。
-- `ResetPart()`：取消或临时禁用当前交互，清除刚体速度，恢复初始局部姿态，然后恢复交互和高亮状态。
+多轴方向会相加并归一化为索引父物体局部向量。一个条目内同一轴不得重复。方向只提供给 Shapes 箭头，不约束 `GrabFreeTransformer`。
 
-高亮状态必须综合所有已配置的 Interactable。只要任意手部或手柄 Interactable 处于 Hover 或 Select 状态，就保持零件高亮；只有全部恢复 Normal 后才关闭高亮。应在组件生命周期方法中订阅和取消订阅 Meta 状态事件，不要使用面向鼠标射线的 Highlight Plus 悬停逻辑处理 VR 手部交互。
+`round` 只定义视觉指引顺序：
 
-### AssemblyController
+- 同一 round 的未完成零件同时获得顺序高亮。
+- 任意零件都可提前交互；首次有效操作立即标记为已交互。
+- 提前操作未来 round 不改变当前指引。
+- 当前 round 全部完成后推进；若下一 round 已提前全部完成，则自动继续跳过。
+- 撤回会恢复操作前的零件姿态、完成快照和当前指引 round。
 
-在装配体根物体或独立场景物体上挂载一个 `AssemblyController`。它保存已经解析的 `AssemblyPart` 列表、实验条件和当前轮次，并公开 `ResetAll()` 方法。第一阶段实验条件固定为 `NoGuidance`。把现有 `BigRedButton` 子物体上的 `InteractableUnityEventWrapper.WhenSelect` 绑定到该方法，同时保留按钮已有的动画和音效监听器。
+## 零件运行时组件
 
-### AssemblyConfigurator 一键配置
+每个 txt 零件配置：
 
-将 `AssemblyConfigurator` 挂在完整装配模型的根物体上（E1 示例为 `71`），通过 VInspector 的“**一键配置拆卸零件**”按钮配置。组件支持显式指定 txt 或自动从 FBX 目录查找唯一 txt，并集中保存实验条件、行程余量、最小行程、碰撞策略、完成阈值和高亮样式。不要再使用 `Tools` 菜单配置装配体。
+- 一个或多个 Collider；默认凸 `MeshCollider`，无 Mesh 时回退 `BoxCollider`。
+- Collider 默认设为 Trigger，不产生零件、手、手柄或环境物理阻挡，但保留 Meta 候选几何查询。
+- Kinematic `Rigidbody`，关闭重力和抛掷。
+- Meta `Grabbable`，`MaxGrabPoints = 1`，不配置双手 Transformer。
+- Meta `GrabInteractable` 与 `HandGrabInteractable`。
+- Meta `GrabFreeTransformer`：位置、旋转不约束，缩放锁定。
+- 零件级 Highlight Plus `HighlightEffect`。
+- `AssemblyDirectionIndicator`，驱动真实的 Shapes `Line` 与 `Cone` 组件组成三维箭头。
+- `AssemblyPart`。
 
-配置后端只服务于该组件的 VInspector 按钮，不提供独立菜单工作流。它应解析并验证 E1 方向数据，一次性解析每个零件，添加和配置所需组件，建立序列化引用，并报告缺失、重复或越界的下标。运行时代码不得反复解析 `E1.txt`，也不得通过子物体下标搜索零件。
+禁止使用或残留 `OneGrabTranslateTransformer`，禁止在 `LateUpdate` 回写位置或旋转。
 
-## Meta Grab 配置
+所有 `AssemblyPart` 的手部和手柄 Interactable 在正常运行时始终启用。只有执行撤回/初始化的安全跨帧阶段可以短暂挂起交互。
 
-每个可动零件至少需要：
+## 视觉优先级
 
-- 一个或多个 Collider。Quest 上优先使用经过验证、开销较低的组合基础形状 Collider；只有在烘焙成功且复杂度合理时才使用凸 `MeshCollider`。
-- 一个关闭重力、禁止抛掷的 `Rigidbody`。松手后零件不得变成自由运动的物理物体。
-- Meta `Grabbable`，最大抓取点数设置为 1，不配置双手 Transformer。
-- Meta `GrabInteractable`，用于手柄近距离抓取。
-- Meta `HandGrabInteractable`，用于手部近距离抓取。
-- Meta `OneGrabTranslateTransformer`，作为单手抓取 Transformer。
+`AssemblyPart` 用一个零件级 `HighlightEffect` 合成两类高亮状态：
 
-`OneGrabTranslateTransformer` 使用相对约束，因为它的约束在父物体坐标系中计算：
+1. Hover/Select 时使用交互色；如果零件已完成则使用完成色。
+2. 没有 Hover/Select、但属于当前指引 round 时使用顺序指引色。
+3. 其他情况关闭高亮。
 
-- 两个非移动轴的最小值和最大值都约束为 `0`。
-- 正方向移动时，目标轴限制在 `0` 到 `maxDistance`。
-- 负方向移动时，目标轴限制在 `-maxDistance` 到 `0`。
-- 保持初始旋转，不允许缩放或双手变换。
+因此当前指引零件被手靠近时应由绿色切换为青色，移开手后恢复绿色。已交互零件不持续显示橙色，只在再次 Hover/Select 时显示橙色，保持现有交互体验。
 
-可动零件在严格遵守上述位置约束的同时，默认忽略与同一装配体内部 Collider 的碰撞对。这样拆卸零件不会被固定件或其他待拆件物理顶住；手、手柄及装配体外部 Collider 不受影响。行程由包围盒脱离距离、相对余量、固定余量、最小行程和整体倍率共同决定，默认值必须使零件在到达端点前完全越过装配体边界。
+描边色、透视填充色和透视边框色必须同步切换，避免可见部分与被遮挡部分呈现不同的状态颜色。透视强度、填充透明度、边框强度和边框宽度由 `AssemblyConfigurator` 集中配置；配置完成后允许用户在具体 `HighlightEffect` 上继续微调，运行时不得覆盖这些渲染参数。
 
-当前 E1 数据经 Unity Renderer 包围盒计算后的实际配置如下，距离单位为索引父物体 `71` 的局部单位：
+`AssemblyDirectionIndicator` 的锚点跟随零件 Renderer 中心，方向使用索引父物体 `TransformDirection(localDirection)`。零件被自由旋转后，箭头仍保持 txt 定义的父空间方向。箭头仅对当前 round 的未完成零件启用。一键配置会在模型根物体下创建 `__DreamVR_DirectionVisuals`，每个提示箭头必须包含真实的 `Shapes.Line` 箭杆和 `Shapes.Cone` 箭头；两者使用 `ZTest Always`，避免被装配外壳遮挡。禁止退回依赖 URP `ShapesRenderFeature` 的 Immediate Mode 绘制。
 
-| 轮次 | 零件下标 | 零件名称 | 父物体局部坐标行程 | 最大距离 |
-| ---- | -------: | -------- | ------------------ | -------: |
-| 1 | 1 | Bottom Spacer | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
-| 1 | 7 | Top Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.63880 |
-| 2 | 2 | Bulb holder | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
-| 2 | 6 | Surface 1.005 | Z 轴从 `0` 到 `+maxDistance` | 0.63880 |
-| 3 | 3 | Flange | Z 轴从 `0` 到 `-maxDistance` | 1.02070 |
-| 3 | 4 | Middle Pentagon | Z 轴从 `0` 到 `+maxDistance` | 0.60680 |
+## 操作历史与撤回
 
-## 高亮配置
+一次操作定义为 Select 到 Unselect。释放时局部位移或旋转至少达到一个阈值才提交：
 
-- 为每个可动零件单独添加 Highlight Plus `HighlightEffect`，或明确指定该零件自身的 Renderer 作为效果目标。
-- 初始状态必须关闭高亮。
-- 使用共享的 `HighlightProfile`，确保颜色和描边宽度一致。
-- 为保证 Quest 性能，优先采用清晰的描边，并谨慎使用 Glow 和 Overlay。
-- 完成零件级效果配置后，禁用或移除当前根物体上始终开启的 `HighlightEffect`。
+- 默认最小局部位移 `0.005`。
+- 默认最小旋转角 `2` 度。
 
-## 重置语义
+两项都未达到或 Meta 取消交互时，恢复本次抓取起点，不留下无法撤回的变化。
 
-无论零件处于空闲、悬停还是正在被抓取的状态，`ResetAll()` 都必须正确工作。重置过程必须：
+历史记录使用 LIFO，保存零件、操作前局部姿态、当前指引 round 和所有零件完成状态。`UndoLastOperation()` 恢复完整快照。抓取尚未释放时按 Undo，只取消当前未提交操作，不再多弹出一条历史。
 
-1. 安全结束或取消当前抓取，防止 Interactor 立即把零件拉回重置前的位置。
-2. 清零线速度和角速度。
-3. 恢复每个零件记录的局部位置和局部旋转。
-4. 恢复预先配置的运动学和交互状态。
-5. 清除残留高亮，然后恢复正常的悬停状态判断。
+`ResetAll()` 只用于会话初始化与测试，不绑定红色按钮。
 
-## 验收清单
+## 一键配置器
 
-- 修改脚本后，Unity 编译无错误。
-- 配置工具报告 6 个可动零件，不存在无法解析的下标；下标 `5` 保持固定。
-- 手部接触或接近时，只高亮当前目标零件。
-- 手柄和手部近距离抓取均可正常使用。
-- 每个零件只能沿配置的父物体局部轴移动。
-- 两端均为硬限制；横向拉动或旋转手部不能使零件偏离指定轴或改变旋转。
-- 松开零件后不会产生抛掷、重力漂移或自由运动。
-- 未完成当前轮次时，后续轮次零件不可抓取；当前轮次全部完成后，下一轮次解锁。
-- 第一阶段不会主动高亮当前轮次零件，也不会显示方向提示；只有接近可抓取零件时才高亮。
-- 按下 `BigRedButton` 后，所有零件精确恢复到初始局部姿态。
-- 正在抓取时执行重置也能正常工作，且不会残留高亮。
-- 先在 Editor Play Mode 中验证，再在目标 Meta 头显上验证。
+把 `AssemblyConfigurator` 挂在拖入场景的 FBX 根物体上。VInspector 按钮：
 
-为方向数据解析、约束配置、内部碰撞策略和重置姿态恢复添加集中的 EditMode 测试。PlayMode 测试必须跨帧检查父空间单轴约束、旋转锁定、同轮次完成门槛和重置协程。由于手部追踪和实际触达范围无法完全通过自动化测试验证，必须保留头显真机测试。
+- “一键配置拆卸零件”：解析同目录 txt、清理旧配置、添加全部组件、建立引用并绑定 Undo 按钮。
+- “验证当前配置”：只在 Editor 中检查，不修改运行时。
+- “重新应用无碰撞策略”：主动把可动零件 Collider 恢复为 Trigger。
+- “撤回上一次操作”：Play Mode 调试入口。
+- “初始化所有零件”：调试入口。
 
-当前自动验证基线：Unity EditMode 测试 `6/6`、PlayMode 测试 `3/3` 通过。EditMode 包含内部 Collider 忽略策略；PlayMode 会实际加载 `Main.unity`，使用真实 Meta `GrabInteractor` 对第一轮零件执行 Hover、Select、Unselect 和 Unhover，并验证 Highlight Plus 随状态开启和关闭；同时验证 `71` 的序列化配置、第一轮交互状态、无主动高亮、第一轮完成后推进到第二轮，以及 `BigRedButton` 重置。场景验证器还会确认 6 个可动零件、实际直接子物体与 txt 下标对应、Meta 父空间单轴约束数值正确、同方向外层行程不短于内层、初始 `round=1`、`child[5]` 固定、根物体整体高亮关闭、各零件必需组件完整、后续轮次初始禁用，且按钮已持久化绑定 `AssemblyController.ResetAll`。
+`Undo Button` 可以手动拖入 `BigRedButton` 的 `InteractableUnityEventWrapper`；留空时自动查找名为 `BigRedButton` 的对象。一键配置会移除该按钮上其他 `AssemblyController.ResetAll/UndoLastOperation` 旧监听，只保留当前装配控制器，同时保留按钮动画、音效等非装配监听。
 
-命令行运行 PlayMode 测试时不要使用 `-nographics`：Meta/OpenXR 原生插件在当前 Windows 环境切换 Play Mode 时会崩溃。保留 `-batchmode` 并启用正常图形初始化时，测试可正常完成。
+配置器只在点击按钮时写入默认值。运行时不解析 txt、不执行 Validator、不重建组件、不在 `OnEnable` 重写 Collider。用户配置后手动调整的序列化参数应被尊重；再次点击一键配置才会覆盖配置器管理的值。
 
-## 仓库工作规则
+## 验收
 
-- 保留用户已有修改。`Assets/Scenes/Main.unity`、URP Renderer 资源和 Highlight Plus 导入内容可能已经处于修改状态。
-- 禁止通过修改 `Library/PackageCache`、`Assets/Samples` 或第三方插件目录中的文件来实现项目功能。
-- 优先使用场景预制体 Override，以及项目自有脚本和资源。
-- 修改脚本后，等待 Unity 编译完成并检查 Console 错误，再配置新增的组件类型。
-- 修改场景后，保存 `Assets/Scenes/Main.unity`，并确认所有序列化引用均未丢失。
-- 使用 Unity MCP 前，必须读取当前连接实例和工程路径。本文档创建时，Unity MCP 连接的是 `EgoAnchor_Unity`，不是 `DreamVR`；禁止通过不匹配的 Unity 实例修改 DreamVR。
+- 所有导入 txt 均能解析，包括单轴、连续多轴和逗号分隔多轴方向。
+- 1 基序号正确映射，重复/零/越界序号有明确错误。
+- 所有 txt 零件始终可抓，未来 round 和已完成零件也可抓。
+- 自由平移和旋转，缩放不变，无物理阻挡，松手不抛掷。
+- `NoGuidance` 无持续顺序高亮、无箭头，但保留接近反馈和完成态反馈。
+- `CurrentPartHighlight` 只持续高亮当前 round，不显示箭头。
+- `CurrentPartHighlightAndDirection` 同时显示当前 round 高亮和 Shapes 箭头。
+- 每个方向提示在场景中均存在可检查的 `Shapes.Line` 和 `Shapes.Cone`，不依赖 Shapes Immediate Mode Renderer Feature。
+- Hover/Select 交互色覆盖顺序指引色，移开后恢复顺序色。
+- 零件被其他几何体遮挡时，当前交互色、完成色或顺序指引色仍能透视显示。
+- 提前操作未来 round 会记录完成但不抢跑当前指引；推进时可跳过已完成 round。
+- Undo 正确恢复姿态、完成状态、指引 round、高亮和箭头。
+- BigRedButton 只绑定当前控制器的 `UndoLastOperation`，不绑定 `ResetAll`。
+
+## 仓库规则
+
+- 保留用户已有修改，尤其是 `Assets/Scenes/Main.unity`、URP 和插件资源。
+- 不修改 `Library/PackageCache`、`Assets/Samples` 或第三方源码。
+- 使用 Unity MCP 前必须核对实例与 `projectRoot`，只有 `P:/Unity-Project/Work/DreamVR` 才允许操作。
+- 未经用户再次明确允许，不得自动启动或调用 Unity；此前错误实例曾造成弹窗。当前可使用静态 C# 编译，但 Unity Test Runner 与头显验证交给正确 DreamVR Editor 执行。

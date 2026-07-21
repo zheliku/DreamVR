@@ -1,79 +1,292 @@
-# AssemblyConfigurator 使用手册
+# DreamVR 批量模型一键配置教程
 
-## 用途
+这份教程按“第一次使用 Unity 也能照着做”的方式编写。目标流程只有一句话：
 
-`AssemblyConfigurator` 是装配模型的一键配置组件。它读取拆卸顺序 txt，定位模型的零基直接子物体，并自动配置 Meta XR 抓取、单轴行程、高亮、轮次和红色重置按钮。
+> 选模型文件夹 -> 把 FBX 拖进场景 -> 添加 `AssemblyConfigurator` -> 选择实验条件 -> 点击一键配置 -> Play。
 
-配置入口在 VInspector，不需要再使用 `Tools` 菜单。
+## 一、先认识模型文件夹
 
-## 首次配置
+模型都在 `Assets/Art/Models`：
 
-1. 打开目标场景，例如 `Assets/Scenes/Main.unity`。
-2. 在 Hierarchy 中选择完整的装配模型根物体。当前 E1 示例是 `71`，不要选择其中某一个可拆零件。
-3. 在 Inspector 中添加 `AssemblyConfigurator`。
-4. 保持“自动查找模型目录中的 txt”开启，或把对应的拆卸顺序 txt 拖到“Plan Asset”。
-5. 根据项目需求调整配置项。
-6. 单击 VInspector 中的“**一键配置拆卸零件**”。
-7. Console 应输出每个 `round`、子物体下标、方向和最大距离。单击“**验证当前配置**”确认没有错误。
-8. 保存场景并进入 Play Mode 测试。
+- `Easy`：E1、E2、E3、E4。
+- `Medium`：M1、M2、M3、M4。
+- `Hard`：H1、H2、H3、H4。
 
-配置组件必须挂在模型根物体上，而不是某个子零件上。txt 中的下标总是相对于自动解析出的直接父物体。
+正常的模型文件夹里有三样东西：
 
-## 配置项
+```text
+模型.fbx       真正拖进 Unity 场景的模型
+编号.txt       拆卸 round、零件序号和箭头方向
+编号.png       给人看的拆卸示意图
+```
 
-| 区域 | 配置项 | 作用 | 建议 |
-| --- | --- | --- | --- |
-| 拆卸数据 | `Plan Asset` | 指定拆卸顺序 txt。 | 同一模型目录只有一个 txt 时可留空。 |
-| 拆卸数据 | 自动查找模型目录中的 txt | 从 FBX 所在目录自动选择唯一 txt。 | E1 保持开启。 |
-| 拆卸数据 | 配置后自动保存场景 | 一键配置后保存场景和资产。 | 保持开启。 |
-| 实验条件 | 条件 | 选择三种实验条件。 | 第一阶段选 `NoGuidance`。 |
-| 行程余量 | 零件尺寸余量倍率 | 零件越过装配体边缘后的额外距离。 | 默认 `0.35`，末端仍未完全脱离时提高。 |
-| 行程余量 | 装配体尺寸余量倍率 | 按整体尺寸增加安全余量。 | 默认 `0.08`。 |
-| 行程余量 | 固定额外余量 | 不受模型大小影响的额外距离。 | 默认 `0.08`。 |
-| 行程余量 | 最小行程 | 每个零件允许的最短移动距离。 | 默认 `0.25`。 |
-| 行程余量 | 行程倍率 | 对自动计算距离整体放大。 | 默认 `1.15`；行程偏小时逐步提高到 `1.25`。 |
-| 碰撞与抓取 | 忽略装配内部碰撞 | 忽略零件与同一装配体内部 Collider 的碰撞对。 | 保持开启，能避免拆卸过程中相互顶住。 |
-| 碰撞与抓取 | 缺少时创建 BoxCollider | 没有 Collider 的零件自动补充包围盒 Collider。 | 保持开启。 |
-| 碰撞与抓取 | 完成阈值 | 松手后判定零件已拆下的行程比例。 | 默认 `0.92`。 |
-| 高亮 | 接触描边颜色、宽度 | 仅在 Hover 或 Select 时的反馈样式。 | Quest 上优先描边，避免开启 Glow。 |
+例如 E2 文件夹：
 
-## VInspector 按钮
+```text
+Assets/Art/Models/Easy/E2/
+  world_0095.fbx
+  E2.txt
+  E2.png
+```
 
-- **一键配置拆卸零件**：重新读取 txt 并更新所有可动件。可重复执行。
-- **验证当前配置**：检查 txt、子物体下标、方向、Collider、Meta 抓取组件、轮次、初始高亮、重置按钮和行程关系。
-- **重新应用内部防碰撞**：运行中或重新启用对象后，再次设置装配体内部 Collider 忽略规则。
-- **恢复所有零件**：在编辑状态立即把所有已配置零件恢复到初始姿态。
+PNG 不需要拖进场景，也不需要手动关联。一键配置后，配置器会把同目录 PNG 自动填入 `Reference Image`，方便人工核对；它不参与运行时逻辑。
 
-## 运行时操作
+## 二、准备场景
 
-第一阶段使用 `NoGuidance`：当前轮次零件只有在手或手柄接近时才会显示描边。沿 txt 指定方向拉动零件，接近最大行程后松手。当前轮次全部零件完成后，下一轮次才可抓取。
+推荐复制现有 `Assets/Scenes/Main.unity` 作为实验场景，因为它已经包含：
 
-E1 的顺序是：
+- `OVRComprehensiveInteractionRig`，负责 Meta 手部和手柄交互。
+- `BigRedButton`，负责撤回上一次操作。
+- 必要的相机、灯光和 XR 配置。
 
-1. `child[1]` 沿 `-Z`，`child[7]` 沿 `+Z`。
-2. `child[2]` 沿 `-Z`，`child[6]` 沿 `+Z`。
-3. `child[3]` 沿 `-Z`，`child[4]` 沿 `+Z`。
+不要删除 Rig。没有 Rig 时，即使模型组件配置正确，也无法用手或手柄抓取。
 
-`child[5]` 是固定件。按 `BigRedButton` 会取消当前可抓取状态、清除高亮并恢复所有零件的初始局部姿态。
+## 三、把模型拖进场景
 
-## 常见问题
+以 E2 为例：
 
-### 拉到末端后不能继续拉
+1. 在 Project 窗口依次打开 `Assets > Art > Models > Easy > E2`。
+2. 找到 `world_0095.fbx`。
+3. 把 FBX 拖到 Hierarchy 的空白位置。
+4. Hierarchy 会出现一个新的模型根物体。
+5. 单击这个最上层根物体。不要选它内部的某个零件。
 
-这是单轴最大行程的硬限制。正确操作是在零件完全离开装配体后松手，让系统推进到下一轮。若零件视觉上还没有完全脱离就到达末端，提高“行程倍率”或“固定额外余量”，再单击一键配置。
+模型放置位置、旋转和整体缩放可以按场景需要调整。配置器记录的是零件相对模型父物体的数据。
 
-### 零件被其他零件卡住，或 Collider 重叠
+## 四、挂载一键配置脚本
 
-确认“忽略装配内部碰撞”已开启，然后单击“重新应用内部防碰撞”。该策略只忽略同一装配模型内部的 Collider，不会关闭手、手柄或场景外物体的碰撞。
+保持模型根物体被选中：
 
-### 无法抓取
+1. 在 Inspector 最下方点击 `Add Component`。
+2. 搜索 `AssemblyConfigurator`。
+3. 点击搜索结果添加组件。
+4. 确认 Inspector 中出现“拆卸数据、撤回按钮、实验条件、自由抓取、高亮、方向箭头”几组设置。
 
-先确认该零件属于当前轮次。后续轮次在前一轮完成前会主动禁用抓取。然后点击“验证当前配置”，检查是否缺少 Collider 或 Meta 组件。
+脚本必须挂在完整 FBX 根物体上。挂在某个小零件上会导致索引父物体解析错误。
 
-### 一键配置找不到 txt
+## 五、关联 TXT 和撤回按钮
 
-将 txt 直接拖入 `Plan Asset`，或者确认 FBX 与唯一的拆卸 txt 位于同一目录。一个目录中存在多个 txt 时必须显式指定 `Plan Asset`。
+### 最简单的自动方式
 
-## 头显验收
+保持以下设置：
 
-在目标 Meta 头显上分别确认手部和手柄近距离抓取。检查接触高亮、单轴移动、末端脱离距离、轮次解锁、红色按钮重置，以及重置过程中不残留高亮或抛掷速度。
+- `Plan Asset`：留空。
+- `Find Plan Next To Model`：开启。
+- `Undo Button`：留空。
+
+配置器会自动：
+
+- 根据 FBX 路径找到同目录唯一的 `.txt`；
+- 把同目录示意 PNG 填入 `Reference Image`；
+- 在场景中找到名为 `BigRedButton` 的按钮；
+- 绑定它内部的 `InteractableUnityEventWrapper`。
+
+### 自动查找失败时
+
+TXT 失败：把模型目录中的 txt 直接拖到 `Plan Asset`。
+
+示意图失败：不影响运行。需要在 Inspector 核对时，可把正确 PNG 拖到 `Reference Image`。
+
+按钮失败：
+
+1. 在 Hierarchy 展开 `BigRedButton`。
+2. 找到挂有 `InteractableUnityEventWrapper` 的按钮对象。
+3. 把这个对象拖到 `Undo Button` 槽位。
+
+一个场景建议只放一个当前实验装配体。切换模型重新配置时，同一个红色按钮会自动解除旧装配控制器绑定，再绑定新模型。
+
+## 六、选择实验条件
+
+在 `Condition` 下拉框中三选一，然后再点击一键配置。
+
+### NoGuidance
+
+- 不持续高亮任何拆卸顺序。
+- 不显示箭头。
+- 手或手柄靠近任意零件时仍显示青色交互反馈。
+- 零件交互完成后，再次靠近时显示橙色完成态反馈。
+
+这就是“没有实验指引”，不是关闭基础交互反馈。
+
+### CurrentPartHighlight
+
+- TXT 当前 `round` 的未完成零件持续显示绿色顺序高亮。
+- 不显示方向箭头。
+- 手靠近高亮零件时，绿色临时切换为青色交互反馈；移开后恢复绿色。
+- 当前 round 全部交互完成后，高亮推进到下一 round。
+
+### CurrentPartHighlightAndDirection
+
+- 包含 `CurrentPartHighlight` 的全部行为。
+- 当前 round 的每个未完成零件额外显示黄色 Shapes 三维箭头。
+- 箭头方向来自 txt，并且相对于模型索引父物体。
+
+注意：三种条件下，所有 txt 零件始终都可以抓取。TXT round 只决定绿色高亮和黄色箭头，不会锁住未来零件。
+
+## 七、建议先保持的默认参数
+
+第一次配置不要改太多：
+
+| 参数                         | 建议值         | 说明                                        |
+| ---------------------------- | -------------- | ------------------------------------------- |
+| Disable Physical Collisions  | 开启           | Collider 作为 Trigger，不会互相卡住。       |
+| Collider Mode                | `ConvexMesh` | 抓取轮廓较准确；性能不足再换`BoxBounds`。 |
+| Minimum Operation Distance   | `0.005`      | 位移达到该值才算一次有效操作。              |
+| Minimum Operation Angle      | `2`          | 旋转达到 2 度也算有效操作。                 |
+| Contact Outline Color        | 青色           | 手靠近/抓取反馈。                           |
+| Guidance Outline Color       | 绿色           | 当前拆卸 round 指引。                       |
+| Completed Part Outline Color | 橙色           | 已交互零件再次靠近的反馈。                  |
+| See Through Intensity        | `0.8`        | 被外壳遮挡时的透视亮度。                    |
+| See Through Tint Alpha       | `0.35`       | 被遮挡零件的半透明填充强度。                |
+| See Through Border           | `0.8`        | 被遮挡轮廓的边框强度。                      |
+| See Through Border Width     | `0.45`       | 被遮挡轮廓的边框宽度。                      |
+| Direction Arrow Color        | 黄色           | 方向箭头。                                  |
+
+箭头尺寸会根据每个零件 Renderer 的世界包围盒自动计算。模型特别大或特别小时，再调整箭头倍率、最小长度和粗细比例。
+
+## 八、点击一键配置
+
+1. 确认没有进入 Play Mode。
+2. 在 `AssemblyConfigurator` 组件中点击“**一键配置拆卸零件**”。
+3. 等待 Console 输出完成信息。
+4. 成功日志应包含：
+   - 找到的索引父物体；
+   - 可动零件数量；
+   - 每个 `part[n] -> child[n-1]` 映射；
+   - round 和提示方向；
+   - Undo 按钮已绑定。
+5. 配置器默认会保存场景。
+
+一键配置会为 txt 中的每个零件添加：
+
+- Trigger Collider；
+- Kinematic Rigidbody；
+- Meta Grabbable、手柄 Grab、手部 HandGrab；
+- `GrabFreeTransformer`；
+- Highlight Plus；
+- Shapes 方向箭头组件；
+- 模型根物体下的 `__DreamVR_DirectionVisuals`，其中每个箭头都有 `Shapes.Line` 箭杆和 `Shapes.Cone` 箭头；
+- `AssemblyPart`。
+
+txt 未列出的直接子物体保持固定。
+
+## 九、运行和检查
+
+点击 Unity 顶部 Play：
+
+1. 用手柄靠近任意零件，确认出现青色描边。
+2. 用手部靠近任意零件，再确认一次。
+3. 抓住任意零件，尝试上下左右移动和旋转。
+4. 确认没有单轴限制，也不会被其他零件碰撞卡住。
+5. 松手，确认零件停在当前位置，不受重力、不被抛出。
+6. 再靠近这个已交互零件，确认描边变为橙色。
+7. 按红色 `Undo`，确认只撤回最近一次有效操作。
+8. 用其他零件或外壳挡住目标，确认高亮仍能以当前状态颜色透视显示。
+
+条件额外检查：
+
+- `NoGuidance`：没有持续绿色高亮，也没有箭头。
+- `CurrentPartHighlight`：只有当前 round 持续绿色高亮，没有箭头。
+- `CurrentPartHighlightAndDirection`：当前 round 同时有绿色高亮和黄色箭头。
+
+可以故意提前抓取未来 round 的零件：它应正常交互并变为已完成，但当前绿色/箭头指引不能立即跳走。完成当前 round 后，系统才推进；已经提前全部完成的 round 会自动跳过。
+
+## 十、切换到下一个模型
+
+1. 退出 Play Mode。
+2. 删除或禁用当前装配模型根物体。
+3. 从另一个 Easy/Medium/Hard 文件夹拖入 FBX。
+4. 给新根物体添加 `AssemblyConfigurator`。
+5. 选择实验条件。
+6. 点击一键配置。
+7. Play。
+
+不要把旧模型根物体上的 `AssemblyConfigurator` 拖给新模型。每个模型实例都应在自己的根物体上挂一个配置器。
+
+## 十一、TXT 写法
+
+序号从 1 开始：
+
+```text
+round1: (1, -Z), (7, +Z)
+round2: (2, -Y), (5, +Y)
+```
+
+支持复合方向：
+
+```text
+round1: (1, +Y-Z), (2, -X, +Z)
+```
+
+两种复合写法含义相同。方向向量会自动归一化。不要在同一条目重复同一轴，例如 `+X-X` 会报错。
+
+TXT 中的序号不是 Unity 显示的 `child[n]`：
+
+```text
+txt part[1] = Unity child[0]
+txt part[2] = Unity child[1]
+```
+
+## 十二、常见错误
+
+### 找不到 txt
+
+- 检查 FBX 和 txt 是否在同一专用文件夹。
+- 检查该文件夹是否有多个 txt。
+- 直接把正确 txt 拖到 `Plan Asset`。
+
+### 序号越界
+
+TXT 写了模型不存在的零件序号。检查示意图、txt 和 FBX 是否属于同一模型，并确认序号从 1 开始。
+
+### 一键配置找不到按钮
+
+把 `BigRedButton` 中带 `InteractableUnityEventWrapper` 的对象拖到 `Undo Button`。
+
+### 未来 round 也能抓
+
+这是新设计，不是错误。所有零件始终可交互，round 只控制视觉指引。
+
+### 手靠近后绿色变青色
+
+这是正确的视觉优先级：青色是当前真实交互反馈，绿色是拆卸顺序指引。移开手后应恢复绿色。
+
+### 被外壳遮住后仍看不到高亮
+
+- 确认已经重新点击一键配置，让零件的 `HighlightEffect` 使用 `See Through = When Highlighted`。
+- 适当提高 `See Through Intensity`、`See Through Tint Alpha` 或 `See Through Border`。
+- `NoGuidance` 不会主动显示零件；只有手/手柄实际 Hover 或 Select 时才出现透视交互反馈。
+
+### 没有箭头
+
+- 确认条件是 `CurrentPartHighlightAndDirection`。
+- 确认已经重新点击一键配置，让零件添加 `AssemblyDirectionIndicator`，并创建 `__DreamVR_DirectionVisuals`。
+- 展开 `__DreamVR_DirectionVisuals`，确认当前 round 对应的 `Shapes Shaft` 和 `Shapes Head` 分别挂有 `Line`、`Cone` 组件。
+- 当前 round 已全部完成时不会再显示该 round 的箭头。
+
+### 箭头太大或太小
+
+调整配置器的：
+
+- `Direction Arrow Length Multiplier`；
+- `Direction Arrow Minimum Length`；
+- `Direction Arrow Thickness Ratio`；
+- `Direction Arrow Head Length/Radius Ratio`。
+
+修改后需要再次点击一键配置，才能批量写入所有零件。
+
+### 配置后手动改参数会不会被运行时覆盖
+
+不会。运行时不解析 txt、不运行 Validator、不自动重建组件，也不在 `OnEnable` 重写 Collider。只有再次点击一键配置，才会重新应用配置器中的默认值。
+
+## 十三、正式实验前检查
+
+- 保存场景。
+- 确认只保留一个当前实验装配体。
+- 确认条件选择正确。
+- 手部和手柄都测试一次。
+- 三种颜色含义没有混淆。
+- 后两种条件的 round 推进正确。
+- 第三种条件的复合方向箭头正确。
+- Undo 连续按多次时严格按后进先出恢复。
+- 最后在目标 Meta 头显上验证真实触达范围和性能。
