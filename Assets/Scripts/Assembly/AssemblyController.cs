@@ -39,6 +39,8 @@ namespace DreamVR.Assembly
 
         public int CurrentGuidanceRound => _currentRound;
 
+        public AssemblyPart CurrentGuidancePart => GetCurrentGuidancePart();
+
         public IReadOnlyList<AssemblyPart> Parts => _parts;
 
         public int OperationCount => _operationHistory.Count;
@@ -331,8 +333,10 @@ namespace DreamVR.Assembly
         private void ApplyGuidanceState()
         {
             bool showCurrentParts = _condition != InteractionExperimentCondition.NoGuidance;
+            bool showOnlyCurrentPart = _condition == InteractionExperimentCondition.CurrentPartHighlight;
             bool showDirections = _condition
                 == InteractionExperimentCondition.CurrentPartHighlightAndDirection;
+            AssemblyPart guidancePart = showOnlyCurrentPart ? GetCurrentGuidancePart() : null;
             foreach (AssemblyPart part in _parts)
             {
                 if (part == null)
@@ -343,9 +347,28 @@ namespace DreamVR.Assembly
                 bool isCurrentIncompletePart = _currentRound > 0
                     && part.Round == _currentRound
                     && !part.IsCompleted;
-                part.SetGuidanceHighlighted(showCurrentParts && isCurrentIncompletePart);
+                bool shouldHighlight = showOnlyCurrentPart
+                    ? part == guidancePart
+                    : isCurrentIncompletePart;
+                part.SetGuidanceHighlighted(showCurrentParts && shouldHighlight);
                 part.SetDirectionGuidanceVisible(showDirections && isCurrentIncompletePart);
             }
+        }
+
+        private AssemblyPart GetCurrentGuidancePart()
+        {
+            if (_currentRound <= 0)
+            {
+                return null;
+            }
+
+            return _parts
+                .Where(part => part != null
+                    && part.Round == _currentRound
+                    && !part.IsCompleted)
+                .OrderBy(part => part.PartNumber)
+                .ThenBy(part => part.ChildIndex)
+                .FirstOrDefault();
         }
 
         private void SubscribeParts()

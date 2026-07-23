@@ -7,8 +7,8 @@ DreamVR 是一个 Unity VR 零件拆卸实验项目。所有列入拆卸 txt 的
 实验条件：
 
 - `NoGuidance`：不显示拆卸顺序和方向。仍保留手/手柄接近时的交互反馈。
-- `CurrentPartHighlight`：持续高亮当前指引轮次的未完成零件，不显示方向箭头。
-- `CurrentPartHighlightAndDirection`：在顺序高亮基础上，用 Shapes 箭头显示每个当前零件的父空间拆卸方向。
+- `CurrentPartHighlight`：按轮次、零件序号逐个持续高亮当前指引零件，不显示方向箭头。
+- `CurrentPartHighlightAndDirection`：持续高亮当前指引轮次的未完成零件，并用 Shapes 箭头显示每个当前零件的父空间拆卸方向。
 
 “交互反馈”和“实验指引”是两套独立状态：
 
@@ -76,7 +76,7 @@ childIndex = partNumber - 1
 
 `round` 只定义视觉指引顺序：
 
-- 同一 round 的未完成零件同时获得顺序高亮。
+- 每次只高亮一个当前指引零件；同一 round 内按 `PartNumber` 从小到大显示。
 - 任意零件都可提前交互；首次有效操作立即标记为已交互。
 - 提前操作未来 round 不改变当前指引。
 - 当前 round 全部完成后推进；若下一 round 已提前全部完成，则自动继续跳过。
@@ -148,8 +148,8 @@ childIndex = partNumber - 1
 - 所有 txt 零件始终可抓，未来 round 和已完成零件也可抓。
 - 自由平移和旋转，缩放不变，无物理阻挡，松手不抛掷。
 - `NoGuidance` 无持续顺序高亮、无箭头，但保留接近反馈和完成态反馈。
-- `CurrentPartHighlight` 只持续高亮当前 round，不显示箭头。
-- `CurrentPartHighlightAndDirection` 同时显示当前 round 高亮和 Shapes 箭头。
+- `CurrentPartHighlight` 只持续高亮当前 round 内按序轮到的一个零件，不显示箭头。
+- `CurrentPartHighlightAndDirection` 同时显示当前 round 未完成零件高亮和 Shapes 箭头。
 - 每个方向提示在场景中均存在可检查的 `Shapes.Line` 和 `Shapes.Cone`，不依赖 Shapes Immediate Mode Renderer Feature。
 - Hover/Select 交互色覆盖顺序指引色，移开后恢复顺序色。
 - 零件被其他几何体遮挡时，当前交互色、完成色或顺序指引色仍能透视显示。

@@ -224,6 +224,55 @@ namespace DreamVR.Assembly.Tests
         }
 
         [Test]
+        public void Controller_GuidanceShowsOnePartAtATimeInPartNumberOrder()
+        {
+            var root = new GameObject("Assembly");
+            var firstObject = new GameObject("First");
+            var secondObject = new GameObject("Second");
+            var futureObject = new GameObject("Future");
+            firstObject.transform.SetParent(root.transform, false);
+            secondObject.transform.SetParent(root.transform, false);
+            futureObject.transform.SetParent(root.transform, false);
+
+            try
+            {
+                AssemblyPart first = CreateConfiguredPart(firstObject, 1, 0, 1);
+                AssemblyPart second = CreateConfiguredPart(secondObject, 2, 1, 1);
+                AssemblyPart future = CreateConfiguredPart(futureObject, 3, 2, 2);
+                AssemblyController controller = root.AddComponent<AssemblyController>();
+                controller.Configure(
+                    new[] { second, future, first },
+                    InteractionExperimentCondition.CurrentPartHighlight);
+                controller.ResetAllImmediate();
+
+                Assert.That(controller.CurrentGuidancePart, Is.SameAs(first));
+                Assert.That(first.GuidanceHighlighted, Is.True);
+                Assert.That(first.DirectionGuidanceVisible, Is.False);
+                Assert.That(second.GuidanceHighlighted, Is.False);
+                Assert.That(second.DirectionGuidanceVisible, Is.False);
+                Assert.That(future.GuidanceHighlighted, Is.False);
+
+                CommitPose(first, Vector3.right, Quaternion.Euler(10f, 0f, 0f));
+                Assert.That(controller.CurrentGuidancePart, Is.SameAs(second));
+                Assert.That(first.GuidanceHighlighted, Is.False);
+                Assert.That(second.GuidanceHighlighted, Is.True);
+                Assert.That(second.DirectionGuidanceVisible, Is.False);
+                Assert.That(future.GuidanceHighlighted, Is.False);
+
+                CommitPose(second, Vector3.up, Quaternion.Euler(0f, 20f, 0f));
+                Assert.That(controller.CurrentGuidancePart, Is.SameAs(future));
+                Assert.That(first.GuidanceHighlighted, Is.False);
+                Assert.That(second.GuidanceHighlighted, Is.False);
+                Assert.That(future.GuidanceHighlighted, Is.True);
+                Assert.That(future.DirectionGuidanceVisible, Is.False);
+            }
+            finally
+            {
+                Object.DestroyImmediate(root);
+            }
+        }
+
+        [Test]
         public void Controller_HighlightOnlyConditionDoesNotShowDirection()
         {
             var root = new GameObject("Assembly");

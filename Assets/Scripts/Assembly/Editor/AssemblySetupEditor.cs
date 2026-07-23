@@ -149,7 +149,12 @@ namespace DreamVR.Assembly.Editor
                     continue;
                 }
 
-                bool isCurrentGuidancePart = part.Round == controller.CurrentRound;
+                bool isCurrentIncompletePart = part.Round == controller.CurrentRound
+                    && !part.IsCompleted;
+                bool isCurrentGuidancePart = configurator.Condition
+                    == InteractionExperimentCondition.CurrentPartHighlight
+                    ? controller.CurrentGuidancePart == part
+                    : isCurrentIncompletePart;
                 Rigidbody rigidbody = part.GetComponent<Rigidbody>();
                 GrabFreeTransformer transformer = part.GetComponent<GrabFreeTransformer>();
                 Grabbable grabbable = part.GetComponent<Grabbable>();
@@ -238,7 +243,7 @@ namespace DreamVR.Assembly.Editor
 
                 bool shouldShowDirection = configurator.Condition
                     == InteractionExperimentCondition.CurrentPartHighlightAndDirection
-                    && isCurrentGuidancePart;
+                    && isCurrentIncompletePart;
                 if (part.DirectionGuidanceVisible != shouldShowDirection
                     || directionIndicator.GuidanceVisible != shouldShowDirection
                     || directionIndicator.Shaft.enabled != shouldShowDirection

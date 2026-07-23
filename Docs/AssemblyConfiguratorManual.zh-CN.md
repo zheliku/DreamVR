@@ -1,3 +1,5 @@
+i 关于坐标轴，可以放上方第一行图像上方从左到右，原点是左上方图像的左上角。y轴可以是从上到下依次是方法xj
+
 # DreamVR 批量模型一键配置教程
 
 这份教程按“第一次使用 Unity 也能照着做”的方式编写。目标流程只有一句话：
@@ -127,24 +129,24 @@ TXT 失败：把模型目录中的 txt 直接拖到 `Plan Asset`。
 
 第一次配置不要改太多：
 
-| 参数                         | 建议值         | 说明                                        |
-| ---------------------------- | -------------- | ------------------------------------------- |
-| Disable Physical Collisions  | 开启           | Collider 作为 Trigger，不会互相卡住。       |
-| Collider Mode                | `ConvexMesh` | 抓取轮廓较准确；性能不足再换`BoxBounds`。 |
-| Minimum Operation Distance   | `0.005`      | 位移达到该值才算一次有效操作。              |
-| Minimum Operation Angle      | `2`          | 旋转达到 2 度也算有效操作。                 |
-| Contact Outline Color        | 蓝色           | 手靠近/抓取反馈。                           |
-| Guidance Outline Color       | 绿色           | 当前拆卸 round 指引。                       |
-| Completed Part Outline Color | 橙色           | 已交互零件再次靠近的反馈。                  |
-| See Through Intensity        | `0.8`        | 被外壳遮挡时的透视亮度。                    |
-| See Through Tint Alpha       | `0.35`       | 被遮挡零件的半透明填充强度。                |
-| See Through Border           | `0.8`        | 被遮挡轮廓的边框强度。                      |
-| See Through Border Width     | `0.45`       | 被遮挡轮廓的边框宽度。                      |
-| Direction Arrow Color        | 半透明琥珀色   | 降低箭头对高亮的注意力干扰。                |
-| Direction Arrow Length Multiplier | `0.55` | 箭头总长度相对零件尺寸的倍率。              |
-| Direction Arrow Minimum Length | `0.05`       | 小零件箭头的最小长度。                      |
-| Direction Arrow Offset Multiplier | `0.08`    | 从零件表面继续沿方向留出的间隙。            |
-| Direction Arrow Thickness Ratio | `0.0225`    | 箭杆相对箭头长度的粗细。                    |
+| 参数                              | 建议值         | 说明                                        |
+| --------------------------------- | -------------- | ------------------------------------------- |
+| Disable Physical Collisions       | 开启           | Collider 作为 Trigger，不会互相卡住。       |
+| Collider Mode                     | `ConvexMesh` | 抓取轮廓较准确；性能不足再换`BoxBounds`。 |
+| Minimum Operation Distance        | `0.005`      | 位移达到该值才算一次有效操作。              |
+| Minimum Operation Angle           | `2`          | 旋转达到 2 度也算有效操作。                 |
+| Contact Outline Color             | 蓝色           | 手靠近/抓取反馈。                           |
+| Guidance Outline Color            | 绿色           | 当前拆卸 round 指引。                       |
+| Completed Part Outline Color      | 橙色           | 已交互零件再次靠近的反馈。                  |
+| See Through Intensity             | `0.8`        | 被外壳遮挡时的透视亮度。                    |
+| See Through Tint Alpha            | `0.35`       | 被遮挡零件的半透明填充强度。                |
+| See Through Border                | `0.8`        | 被遮挡轮廓的边框强度。                      |
+| See Through Border Width          | `0.45`       | 被遮挡轮廓的边框宽度。                      |
+| Direction Arrow Color             | 半透明琥珀色   | 降低箭头对高亮的注意力干扰。                |
+| Direction Arrow Length Multiplier | `0.55`       | 箭头总长度相对零件尺寸的倍率。              |
+| Direction Arrow Minimum Length    | `0.05`       | 小零件箭头的最小长度。                      |
+| Direction Arrow Offset Multiplier | `0.08`       | 从零件表面继续沿方向留出的间隙。            |
+| Direction Arrow Thickness Ratio   | `0.0225`     | 箭杆相对箭头长度的粗细。                    |
 
 箭头尺寸会根据每个零件 Renderer 的世界包围盒自动计算。模型特别大或特别小时，再调整箭头倍率、最小长度和粗细比例。
 
