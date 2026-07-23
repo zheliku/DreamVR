@@ -12,10 +12,10 @@ DreamVR 是一个 Unity VR 零件拆卸实验项目。所有列入拆卸 txt 的
 
 “交互反馈”和“实验指引”是两套独立状态：
 
-- 交互反馈：手或手柄 Hover/Select 时显示，默认青色；优先级最高。
+- 交互反馈：手或手柄 Hover/Select 时显示，默认蓝色；优先级最高。
 - 顺序指引：仅后两种实验条件显示，默认绿色，持续标识当前 round。
 - 已交互反馈：零件首次产生有效抓放后成为已交互状态，再次 Hover/Select 时默认显示橙色。
-- 方向指引：仅 `CurrentPartHighlightAndDirection` 显示，默认黄色 Shapes 三维箭头。
+- 方向指引：仅 `CurrentPartHighlightAndDirection` 显示，默认半透明琥珀色 Shapes 三维箭头。
 
 所有零件级高亮均启用 Highlight Plus `SeeThroughMode.WhenHighlighted`。零件被外壳或其他零件遮挡时，遮挡区域仍使用当前状态颜色显示透视轮廓和半透明着色；未处于交互反馈或顺序指引状态的零件不显示透视效果。
 
@@ -108,11 +108,11 @@ childIndex = partNumber - 1
 2. 没有 Hover/Select、但属于当前指引 round 时使用顺序指引色。
 3. 其他情况关闭高亮。
 
-因此当前指引零件被手靠近时应由绿色切换为青色，移开手后恢复绿色。已交互零件不持续显示橙色，只在再次 Hover/Select 时显示橙色，保持现有交互体验。
+因此当前指引零件被手靠近时应由绿色明确切换为蓝色，移开手后恢复绿色。由于 Highlight Plus 在持续高亮期间不会因字段赋值自动重建透视材质，每次状态色变化后必须调用 `UpdateMaterialProperties()`，保证描边和透视填充同时切色。已交互零件不持续显示橙色，只在再次 Hover/Select 时显示橙色，保持现有交互体验。
 
 描边色、透视填充色和透视边框色必须同步切换，避免可见部分与被遮挡部分呈现不同的状态颜色。透视强度、填充透明度、边框强度和边框宽度由 `AssemblyConfigurator` 集中配置；配置完成后允许用户在具体 `HighlightEffect` 上继续微调，运行时不得覆盖这些渲染参数。
 
-`AssemblyDirectionIndicator` 的锚点跟随零件 Renderer 中心，方向使用索引父物体 `TransformDirection(localDirection)`。零件被自由旋转后，箭头仍保持 txt 定义的父空间方向。箭头仅对当前 round 的未完成零件启用。一键配置会在模型根物体下创建 `__DreamVR_DirectionVisuals`，每个提示箭头必须包含真实的 `Shapes.Line` 箭杆和 `Shapes.Cone` 箭头；两者使用 `ZTest Always`，避免被装配外壳遮挡。禁止退回依赖 URP `ShapesRenderFeature` 的 Immediate Mode 绘制。
+`AssemblyDirectionIndicator` 的锚点跟随零件 Renderer 中心，方向使用索引父物体 `TransformDirection(localDirection)`。零件被自由旋转后，箭头仍保持 txt 定义的父空间方向。箭头仅对当前 round 的未完成零件启用。一键配置会在模型根物体下创建 `__DreamVR_DirectionVisuals`，每个提示箭头必须包含真实的 `Shapes.Line` 箭杆和 `Shapes.Cone` 箭头。箭头从零件世界包围盒沿提示方向的表面之外开始，再增加按零件尺寸计算的间隙；默认长度倍率 `0.55`、最小长度 `0.05`、表面外间隙倍率 `0.08`、箭杆粗细倍率 `0.0225`、箭头长度倍率 `0.24`、箭头半径倍率 `0.075`。两者采用半透明混合并使用 `ZTest Always`，降低注意力占用同时避免被装配外壳遮挡。禁止退回依赖 URP `ShapesRenderFeature` 的 Immediate Mode 绘制。
 
 ## 操作历史与撤回
 

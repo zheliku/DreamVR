@@ -41,7 +41,7 @@ namespace DreamVR.Assembly
         [SerializeField] private HandGrabInteractable _handGrab;
         [SerializeField] private HighlightEffect _highlightEffect;
         [SerializeField] private AssemblyDirectionIndicator _directionIndicator;
-        [SerializeField] private Color _activeOutlineColor = new(0.15f, 0.85f, 1f, 1f);
+        [SerializeField] private Color _activeOutlineColor = new(0.05f, 0.5f, 1f, 1f);
         [SerializeField] private Color _guidanceOutlineColor = new(0.2f, 1f, 0.35f, 1f);
         [SerializeField] private Color _completedOutlineColor = new(1f, 0.55f, 0.1f, 1f);
 
@@ -425,6 +425,7 @@ namespace DreamVR.Assembly
             _highlightEffect.outlineColor = stateColor;
             _highlightEffect.seeThroughTintColor = stateColor;
             _highlightEffect.seeThroughBorderColor = stateColor;
+            _highlightEffect.UpdateMaterialProperties();
         }
 
         private void ConfigureSeeThroughHighlight(

@@ -13,7 +13,7 @@ namespace DreamVR.Assembly
         [SerializeField] private Vector3 _anchorLocalPosition;
         [SerializeField] private Line _shaft;
         [SerializeField] private Cone _head;
-        [SerializeField] private Color _color = new(1f, 0.82f, 0.1f, 1f);
+        [SerializeField] private Color _color = new(1f, 0.72f, 0.2f, 0.55f);
         [SerializeField, Min(0.001f)] private float _length = 0.18f;
         [SerializeField, Min(0f)] private float _anchorOffset = 0.03f;
         [SerializeField, Min(0.0001f)] private float _shaftThickness = 0.008f;
@@ -99,7 +99,7 @@ namespace DreamVR.Assembly
         {
             if (_shaft != null)
             {
-                _shaft.BlendMode = ShapesBlendMode.Opaque;
+                _shaft.BlendMode = ShapesBlendMode.Transparent;
                 _shaft.Geometry = LineGeometry.Volumetric3D;
                 _shaft.ThicknessSpace = ThicknessSpace.Meters;
                 _shaft.EndCaps = LineEndCap.Round;
@@ -111,7 +111,7 @@ namespace DreamVR.Assembly
 
             if (_head != null)
             {
-                _head.BlendMode = ShapesBlendMode.Opaque;
+                _head.BlendMode = ShapesBlendMode.Transparent;
                 _head.SizeSpace = ThicknessSpace.Meters;
                 _head.FillCap = true;
                 _head.Radius = _headRadius;

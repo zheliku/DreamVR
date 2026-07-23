@@ -10,6 +10,7 @@ using UnityEditor;
 using UnityEditor.Events;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace DreamVR.Assembly.Editor
 {
@@ -253,6 +254,14 @@ namespace DreamVR.Assembly.Editor
                 {
                     errors.Add($"part[{step.PartNumber}] 的 Shapes 箭头方向与 txt 不一致。");
                 }
+
+                if (directionIndicator.Shaft.BlendMode != ShapesBlendMode.Transparent
+                    || directionIndicator.Head.BlendMode != ShapesBlendMode.Transparent
+                    || directionIndicator.Shaft.ZTest != CompareFunction.Always
+                    || directionIndicator.Head.ZTest != CompareFunction.Always)
+                {
+                    errors.Add($"part[{step.PartNumber}] 的 Shapes 箭头未正确配置半透明穿透渲染。");
+                }
             }
 
             foreach (AssemblyPart unexpectedPart in indexedParent
@@ -493,6 +502,13 @@ namespace DreamVR.Assembly.Editor
             float arrowLength = Mathf.Max(
                 configurator.DirectionArrowMinimumLength,
                 partWorldSize * configurator.DirectionArrowLengthMultiplier);
+            Vector3 worldDirection = indexedParent
+                .TransformDirection(step.HintLocalDirection)
+                .normalized;
+            float surfaceOffset = Mathf.Abs(worldDirection.x) * worldBounds.extents.x
+                + Mathf.Abs(worldDirection.y) * worldBounds.extents.y
+                + Mathf.Abs(worldDirection.z) * worldBounds.extents.z;
+            float arrowGap = partWorldSize * configurator.DirectionArrowOffsetMultiplier;
             AssemblyDirectionIndicator directionIndicator =
                 GetOrAddComponent<AssemblyDirectionIndicator>(partObject);
             (Line shaft, Cone head) = CreateDirectionShapeComponents(
@@ -507,7 +523,7 @@ namespace DreamVR.Assembly.Editor
                 head,
                 configurator.DirectionArrowColor,
                 arrowLength,
-                partWorldSize * configurator.DirectionArrowOffsetMultiplier,
+                surfaceOffset + arrowGap,
                 arrowLength * configurator.DirectionArrowThicknessRatio,
                 arrowLength * configurator.DirectionArrowHeadLengthRatio,
                 arrowLength * configurator.DirectionArrowHeadRadiusRatio);

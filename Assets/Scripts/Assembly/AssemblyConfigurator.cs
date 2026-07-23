@@ -45,7 +45,7 @@ namespace DreamVR.Assembly
         [SerializeField, Min(0f)] private float _minimumOperationAngle = 2f;
 
         [Header("高亮")]
-        [SerializeField] private Color _contactOutlineColor = new(0.15f, 0.85f, 1f, 1f);
+        [SerializeField] private Color _contactOutlineColor = new(0.05f, 0.5f, 1f, 1f);
         [SerializeField] private Color _guidanceOutlineColor = new(0.2f, 1f, 0.35f, 1f);
         [SerializeField] private Color _completedPartOutlineColor = new(1f, 0.55f, 0.1f, 1f);
         [SerializeField, Min(0f)] private float _outlineWidth = 0.35f;
@@ -55,13 +55,13 @@ namespace DreamVR.Assembly
         [SerializeField, Min(0f)] private float _seeThroughBorderWidth = 0.45f;
 
         [Header("方向箭头（Shapes）")]
-        [SerializeField] private Color _directionArrowColor = new(1f, 0.82f, 0.1f, 1f);
-        [SerializeField, Min(0.01f)] private float _directionArrowLengthMultiplier = 0.9f;
-        [SerializeField, Min(0.01f)] private float _directionArrowMinimumLength = 0.08f;
-        [SerializeField, Min(0f)] private float _directionArrowOffsetMultiplier = 0.2f;
-        [SerializeField, Min(0.001f)] private float _directionArrowThicknessRatio = 0.035f;
-        [SerializeField, Range(0.1f, 0.6f)] private float _directionArrowHeadLengthRatio = 0.28f;
-        [SerializeField, Min(0.01f)] private float _directionArrowHeadRadiusRatio = 0.11f;
+        [SerializeField] private Color _directionArrowColor = new(1f, 0.72f, 0.2f, 0.55f);
+        [SerializeField, Min(0.01f)] private float _directionArrowLengthMultiplier = 0.55f;
+        [SerializeField, Min(0.01f)] private float _directionArrowMinimumLength = 0.05f;
+        [SerializeField, Min(0f)] private float _directionArrowOffsetMultiplier = 0.08f;
+        [SerializeField, Min(0.001f)] private float _directionArrowThicknessRatio = 0.0225f;
+        [SerializeField, Range(0.1f, 0.6f)] private float _directionArrowHeadLengthRatio = 0.24f;
+        [SerializeField, Min(0.01f)] private float _directionArrowHeadRadiusRatio = 0.075f;
 
         public TextAsset PlanAsset => _planAsset;
         public Texture2D ReferenceImage => _referenceImage;

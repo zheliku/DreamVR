@@ -9,6 +9,7 @@ using Shapes;
 using UnityEditor.SceneManagement;
 #endif
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using Object = UnityEngine.Object;
@@ -234,13 +235,14 @@ namespace DreamVR.Assembly.Tests
             headObject.transform.SetParent(root.transform, false);
             Cone head = headObject.AddComponent<Cone>();
             Vector3 direction = new Vector3(1f, 1f, -1f).normalized;
+            Color arrowColor = new(1f, 0.72f, 0.2f, 0.55f);
             indicator.Configure(
                 root.transform,
                 direction,
                 Vector3.zero,
                 shaft,
                 head,
-                Color.yellow,
+                arrowColor,
                 0.2f,
                 0.02f,
                 0.006f,
@@ -255,6 +257,11 @@ namespace DreamVR.Assembly.Tests
             Assert.That(indicator.enabled, Is.False);
             Assert.That(shaft.enabled, Is.False);
             Assert.That(head.enabled, Is.False);
+            Assert.That(shaft.BlendMode, Is.EqualTo(ShapesBlendMode.Transparent));
+            Assert.That(head.BlendMode, Is.EqualTo(ShapesBlendMode.Transparent));
+            Assert.That(shaft.ZTest, Is.EqualTo(CompareFunction.Always));
+            Assert.That(head.ZTest, Is.EqualTo(CompareFunction.Always));
+            Assert.That(shaft.Color.a, Is.EqualTo(0.55f).Within(0.0001f));
 
             AssemblyPart part = partObject.AddComponent<AssemblyPart>();
             part.Configure(
@@ -289,6 +296,14 @@ namespace DreamVR.Assembly.Tests
             Assert.That(indicator.enabled, Is.True);
             Assert.That(shaft.enabled, Is.True);
             Assert.That(head.enabled, Is.True);
+            Vector3 expectedStart = direction * 0.02f;
+            Vector3 expectedHeadBase = direction * 0.17f;
+            Assert.That(
+                Vector3.Distance(shaft.transform.TransformPoint(shaft.Start), expectedStart),
+                Is.LessThan(0.0001f));
+            Assert.That(
+                Vector3.Distance(head.transform.position, expectedHeadBase),
+                Is.LessThan(0.0001f));
 
             CommitPose(part, Vector3.right, Quaternion.identity);
             Assert.That(indicator.GuidanceVisible, Is.False);
@@ -296,6 +311,90 @@ namespace DreamVR.Assembly.Tests
             Assert.That(shaft.enabled, Is.False);
             Assert.That(head.enabled, Is.False);
 
+            Object.Destroy(root);
+            yield return null;
+        }
+
+        [UnityTest]
+        public IEnumerator GuidedPart_HoverUsesBlueThenRestoresGreen()
+        {
+            var root = new GameObject("Assembly");
+            GameObject partObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            partObject.name = "Guided Part";
+            partObject.SetActive(false);
+            partObject.transform.SetParent(root.transform, false);
+            partObject.GetComponent<Collider>().isTrigger = true;
+
+            Rigidbody rigidbody = partObject.AddComponent<Rigidbody>();
+            rigidbody.useGravity = false;
+            rigidbody.isKinematic = true;
+            GrabFreeTransformer transformer = partObject.AddComponent<GrabFreeTransformer>();
+            Grabbable grabbable = partObject.AddComponent<Grabbable>();
+            grabbable.MaxGrabPoints = 1;
+            grabbable.InjectOptionalOneGrabTransformer(transformer);
+            grabbable.InjectOptionalTargetTransform(partObject.transform);
+            grabbable.InjectOptionalRigidbody(rigidbody);
+            grabbable.InjectOptionalThrowWhenUnselected(false);
+            grabbable.InjectOptionalKinematicWhileSelected(true);
+            GrabInteractable grab = partObject.AddComponent<GrabInteractable>();
+            grab.MaxSelectingInteractors = 1;
+            grab.InjectRigidbody(rigidbody);
+            grab.InjectOptionalPointableElement(grabbable);
+            HighlightEffect highlight = partObject.AddComponent<HighlightEffect>();
+            highlight.effectTarget = partObject.transform;
+
+            AssemblyPart part = partObject.AddComponent<AssemblyPart>();
+            Color contactBlue = new(0.05f, 0.5f, 1f, 1f);
+            part.Configure(
+                1,
+                0,
+                1,
+                Vector3.forward,
+                0.005f,
+                2f,
+                rigidbody,
+                grabbable,
+                grab,
+                null,
+                highlight,
+                null,
+                true,
+                contactBlue,
+                Color.green,
+                Color.yellow,
+                0.8f,
+                0.35f,
+                0.8f,
+                0.45f);
+
+            AssemblyController controller = root.AddComponent<AssemblyController>();
+            controller.Configure(
+                new[] { part },
+                InteractionExperimentCondition.CurrentPartHighlight);
+            partObject.SetActive(true);
+            yield return null;
+            controller.ResetAllImmediate();
+
+            Assert.That(highlight.highlighted, Is.True);
+            Assert.That(ColorDistance(highlight.outlineColor, Color.green), Is.LessThan(0.0001f));
+
+            GrabInteractor interactor = CreateGrabInteractor(out GameObject interactorObject);
+            yield return null;
+            interactor.ForceSelect(grab);
+            interactor.ProcessCandidate();
+            interactor.Hover();
+            Assert.That(ColorDistance(highlight.outlineColor, contactBlue), Is.LessThan(0.0001f));
+            Assert.That(
+                ColorDistance(highlight.seeThroughTintColor, contactBlue),
+                Is.LessThan(0.0001f));
+
+            interactor.Unhover();
+            Assert.That(ColorDistance(highlight.outlineColor, Color.green), Is.LessThan(0.0001f));
+            Assert.That(
+                ColorDistance(highlight.seeThroughTintColor, Color.green),
+                Is.LessThan(0.0001f));
+
+            Object.Destroy(interactorObject);
             Object.Destroy(root);
             yield return null;
         }

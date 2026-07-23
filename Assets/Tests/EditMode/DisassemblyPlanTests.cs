@@ -15,6 +15,31 @@ namespace DreamVR.Assembly.Tests
             + "round3: (3, -Z), (4, +Z)";
 
         [Test]
+        public void Configurator_DefaultsUseBlueContactAndSubtleArrow()
+        {
+            var root = new GameObject("Assembly");
+
+            try
+            {
+                AssemblyConfigurator configurator = root.AddComponent<AssemblyConfigurator>();
+                Color expectedBlue = new(0.05f, 0.5f, 1f, 1f);
+
+                Assert.That(
+                    Vector4.Distance(configurator.ContactOutlineColor, expectedBlue),
+                    Is.LessThan(0.0001f));
+                Assert.That(configurator.DirectionArrowColor.a, Is.EqualTo(0.55f).Within(0.0001f));
+                Assert.That(configurator.DirectionArrowLengthMultiplier, Is.EqualTo(0.55f).Within(0.0001f));
+                Assert.That(configurator.DirectionArrowMinimumLength, Is.EqualTo(0.05f).Within(0.0001f));
+                Assert.That(configurator.DirectionArrowOffsetMultiplier, Is.EqualTo(0.08f).Within(0.0001f));
+                Assert.That(configurator.DirectionArrowThicknessRatio, Is.EqualTo(0.0225f).Within(0.0001f));
+            }
+            finally
+            {
+                Object.DestroyImmediate(root);
+            }
+        }
+
+        [Test]
         public void Parse_UsesOneBasedPartNumbersAndZeroBasedUnityChildIndices()
         {
             IReadOnlyList<DisassemblyStep> steps = DisassemblyPlanParser.Parse(E1Plan);
